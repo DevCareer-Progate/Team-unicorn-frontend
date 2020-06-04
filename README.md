@@ -30,7 +30,9 @@ Update Read Me: Branch naming convention follow this pattern: branch naming: cho
 <p class="has-line-data" data-line-start="35" data-line-end="36"><code>git clone pasteTheUrlYouJustCopied</code></p>
 <p class="has-line-data" data-line-start="37" data-line-end="38"><code>cd Team-unicorn</code></p>
 <p class="has-line-data" data-line-start="39" data-line-end="40"><strong>Note:</strong> you will be on the Develop branch automatically. We are not to work on this branch</p>
-<p class="has-line-data" data-line-start="41" data-line-end="42">To create and also move to another branch</p>
+<p class="has-line-data" data-line-start="30" data-line-end="32"><strong>Step 6:</strong> To start your work, work the directory that contains the project files.<br>
+<code>cd HNG_storm-task</code></p>
+<p class="has-line-data" data-line-start="33" data-line-end="34"><strong>Step 7:</strong> <code>git remote add upstream https://github.com/DevCareer-Progate/Team-unicorn.git</code></p>
 <p class="has-line-data" data-line-start="43" data-line-end="44">Run: <code>git checkout -b &lt;nameOfBranch&gt;</code></p>
 <p class="has-line-data" data-line-start="45" data-line-end="46">Don’t forget the naming convention of branch.</p>
 <p class="has-line-data" data-line-start="47" data-line-end="48"><strong>Note:</strong> &lt;nameOfBranch&gt; should be replaced with the feature you are working on (i.e feat/signup-page-design), use hypen when you will normally use space</p>
