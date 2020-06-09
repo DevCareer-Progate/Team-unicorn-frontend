@@ -1,12 +1,12 @@
   body{
     background-color:  #E5E5E5;;
     font-family: 'Raleway', sans-serif;
-
+    font-weight: 900;
   }
-  .flexcontainer{
+  .flexContainer{
    display: flex;
    flex-direction: row;
-  margin-top: 30px;
+   margin-top: 30px;
   }
   .col-9{
     width: 73%;
@@ -32,7 +32,7 @@
    color: #181818; 
    padding-left: 30px;
    padding-top: 25px;
-   padding-bottom: 15px;
+   padding-bottom: 10px;
  }
  .top hr{
    width: 90%;
@@ -44,15 +44,15 @@
  display: flex;
  background-color: white;
  padding-top: 10px;
+ font-weight: 900;
  }
   
  
  input {
-  
-    width: 91px;
+    width: 80px;
     height: 8px;
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 17px;
     color: rgba(29, 29, 29, 0.2);
     border-style: none;
@@ -69,6 +69,7 @@
     background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
     border-radius: 4px;
     border: 1px solid #FFFFFF;
+   margin-left:5px
  }
 
  .under{
@@ -133,7 +134,7 @@
     padding-bottom: 1px;
     padding-right: 2px;
   }
-  .insidegoogle h4{
+  .insideGoogle h4{
     width: 150px;
     height: 15px;
   }
@@ -181,7 +182,7 @@
 
     /* aside  styles */
   
-  .buton{
+  .button{
     background-color: white;
     padding-left: 40px;
     padding-right: 40px;
@@ -277,11 +278,13 @@
     height: 18px;
     color: #02b033;
   }
-  .grey .notify{
+  .grey .material-icons{
     float: right;
-    color: blue;
-    border-radius: 50%;
+    color: black;
+    padding-top:20px;
+    padding-left:30px
   }
+
    .second{
   background-color:#FCFDFD;
   padding-left: 10px;
@@ -349,7 +352,7 @@
   .third{
     background-color: #FCFDFD;;
     width: 270px;
-    height: 350px;
+    height: 310px;
     border-radius: 4px;
     
   }
@@ -377,7 +380,7 @@
 
   .child a{
     font-size: 14px;
-    width: 100px;
+    width: 150px;
     padding-bottom: 1px;
     color: #181818;
     text-decoration: none;
