@@ -1,0 +1,137 @@
+    * {
+        box-sizing: border-box;
+    }
+    /* IMPORT FONT-FACE */
+    
+    @font-face {
+        font-family: 'Gotham Pro';
+        src: url(sanstion_light.woff);
+    }
+    
+    body {
+        font-family: 'Gotham Pro';
+        font-size: 12px;
+        background-color: #F7F9FB;
+    }
+    
+    a,
+    li {
+        text-decoration: none;
+    }
+    
+    footer {
+        max-width: 1440px;
+        margin-left: 130px;
+        margin-right: 130px;
+        margin-top: 30px;
+        margin-bottom: 35px;
+        background-color: #F7F9FB;
+        ;
+    }
+    /* BLUE LINKEDIN SPAN */
+    
+    .blue {
+        color: blue;
+    }
+    /* NAVIGATIONS*/
+    
+    li {
+        list-style: none;
+        padding-bottom: 5px;
+    }
+    
+    .link a {
+        color: #333;
+    }
+    
+    .flex-box {
+        display: flex;
+        flex-direction: rows;
+        justify-content: space-between;
+    }
+    
+    .nav-bar {
+        position: relative;
+        left: 10%;
+        bottom: 6rem;
+    }
+    
+    .nav-bar h3 {
+        padding-left: 38px;
+        padding-top: 10px;
+    }
+    /* QUESTION SECTION */
+    
+    .question-box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 3rem;
+    }
+    /* FONT AWESOME ICONS */
+    
+    .icons {
+        position: relative;
+        left: 9rem;
+        bottom: 16%;
+        color: #fff;
+    }
+    
+    .sett {
+        color: #0275B1;
+    }
+    
+    .set {
+        width: 170px;
+        height: 32px;
+        padding: 3px 10px;
+        border: 1px solid #0275B1;
+        border-radius: 4px;
+    }
+    
+    .quest {
+        width: 170px;
+        height: 32px;
+        padding: 3px 10px;
+        border: 1px solid #0275B1;
+        border-radius: 4px;
+        background-color: #0275B1;
+    }
+    /*QUESTION  PLACEHOLDER*/
+    
+    input.quest::placeholder {
+        font-size: 10px;
+    }
+    
+    .quest::placeholder {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 12px;
+    }
+    /*SETTINGS  PLACEHOLDER*/
+    
+    input.set::placeholder {
+        font-size: 9px;
+    }
+    
+    .set::placeholder {
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    /* LANGUAGE DROP-DOWN */
+    
+    .drop-down {
+        display: block;
+        position: relative;
+        bottom: 3rem;
+    }
+    
+    #lang {
+        text-transform: uppercase;
+        margin-right: 50px;
+        width: 270px;
+        height: 32px;
+        border-radius: 4px;
+        font-size: 9px;
+    }

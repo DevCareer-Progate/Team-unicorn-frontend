@@ -1,0 +1,293 @@
+
+/* IMPORT LINKEDIN FONT */
+@font-face{
+    font-family: 'Gotham Pro';
+    src: url(./fonts/GothaProReg.otf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+    font-size: 16px;
+    font-family: 'Gotham Pro';
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+h3{
+  font-weight: 900;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+
+#content{
+    margin: 6rem 3rem;
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+}
+
+
+/* HEADER SECTION */
+#header{
+  background-color: rgb(117, 110, 110);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+ 
+
+.border-top{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 4px;
+}
+/* HEADER SECTION END */
+
+/* NOTIFICATION BAR  */
+#notif-bar-top {
+    display: flex;
+    border-bottom: 1px solid #dad7d7;
+    margin: 6rem 0rem 0 0rem ;
+    margin: 0;
+    border: 1px solid
+      linear-gradient(
+        180deg,
+        rgba(241, 244, 248, 0.8) 0%,
+        rgba(241, 244, 248, 0) 100%
+      );
+    margin: 1.5rem 0;
+    font-weight: 700;
+  }
+  
+  /* BLUE RECEIVED BLOCK */
+  .received {
+    background-color: #0e6795;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.25rem 0.25rem 0 0;
+    width: 17.5rem;
+    color: #fff;
+  }
+  
+  .received a {
+    color: #fff;
+  }
+  
+  .received:hover {
+    background-color: #095880;
+    cursor: pointer;
+  }
+  .white-block {
+    background-color: #fff;
+    width: 17.5rem;
+    text-align: center;
+    padding: 0.9rem;
+    margin-top: .75rem;
+    cursor: pointer;
+    border-radius: 0px 4px 0px 0px;
+    border: 1px solid #e7e7e7;
+  }
+/* NOTIFICATION BAR SECTION END */
+  
+
+/* ABOUT SECTION */
+#about{
+    background-color: #fff;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+    margin-top: 2rem;
+    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+    border-radius: 4px;
+}
+
+#about h3, a{
+    font-weight: 600;
+    margin: 0;
+}
+
+.link-text{
+    font-size: 12px;
+    color: #0275b1;
+}
+/* ABOUT SECTION END */
+
+
+
+/* PROJECTS SECTION */
+#projects{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+border-radius: 4px;
+}
+
+/* PROJECT BOXES */
+.showcase{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0 10px;
+    margin: 1rem 0;
+    
+}
+
+.showcase img{
+  width: 95%;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+  border-radius: 4px;
+}
+
+.small{
+    font-size: 10px;
+}
+
+.grey-text{
+  color: #747474;
+  margin-left: .8rem;
+}
+/* PROJECT SECTION END */
+
+
+/* Skills Section */
+#skills{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+border-radius: 4px;
+}
+
+#showcase-skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 25px;
+}
+
+
+/* Problem with aligning the blue number digit with design . Please Fix */
+.skill-box{
+  display: grid;
+  grid-template-columns: .8fr .2fr;
+  background: #FFFFFF;
+border: 1px solid #F4F4F4;
+box-sizing: border-box;
+border-radius: 6px;
+padding: 0rem;
+margin-bottom: 1.2rem;
+}
+
+.skill-box h5{
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+.skill-box p.link-text{
+  margin: 1rem 0 1rem 1rem;
+  text-align: left;
+}
+
+.img-collage{
+  display: flex;
+  margin: 0 0 1rem 1.5rem;
+  
+}
+
+.img-collage img{
+  margin-right: -0.55rem;
+}
+
+/* End of Project Section */
+
+/* EXPERIENCE SECTION */
+
+#experience{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+border-radius: 4px;
+}
+
+.jobs{
+  display: grid;
+  grid-template-columns: .1fr .9fr;
+  margin: 0 0rem;
+  align-items: center;
+  border-bottom: 1px solid #F4F4F4;
+  padding-bottom: 1.2rem;
+}
+
+ h4{
+  margin: .75rem 0;
+}
+
+.jobs img{
+  margin-top: -4rem;
+  margin-left: 1rem;
+}
+
+.jobs p{
+  font-size: .75rem;
+  line-height: 160%;
+  margin: .5rem 0;
+}
+
+#no-border{
+  border: none;
+  margin-top: 2.5rem;
+}
+
+#no-border h4{
+  margin-top: -.75rem;
+}
+
+/* END OF EXPERIENCE SECTION */
+
+
+/* Education Section Begins */
+
+#education{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+border-radius: 4px;
+}
+
+#education img{
+  margin-top: -4rem;
+}
+
+.year{
+  margin-left: 0px;
+  font-size: 12px;
+}
