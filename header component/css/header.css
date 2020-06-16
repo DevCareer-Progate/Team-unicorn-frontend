@@ -1,0 +1,166 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.container {
+   max-width: 1200px;
+   padding: 10px;
+   margin: 0 auto;
+}
+
+.nav-bar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 75px;
+}
+
+.nav-lists {
+   display: none;
+   align-items: center;
+   text-align: center;
+}
+
+
+.nav-list {
+   padding: 0 25px;
+   list-style-type: none;
+}
+
+.nav-list-icon {
+   margin-bottom: 2px;
+}
+
+.nav-logo {
+   z-index: 11;
+}
+
+.chat {
+   margin-bottom: 6px;
+}
+
+.nav-link {
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
+}
+
+.form-control {
+   display: flex;
+   align-items: center;
+}
+
+.search-btn {
+   border: none;
+   background-color: #fff;
+   padding: 0 10px;
+}
+
+.search-input {
+   border: none;
+   height: 50px;
+}
+
+.search-input:focus {
+   outline: none;
+}
+
+.profile {
+   display: none;
+}
+
+.img-profile {
+   padding: 0 10px;
+}
+
+.other {
+   display: none;
+ text-align: center;
+}
+
+
+/**Hamburger ICON **/
+.hamburger-icon {
+	width: 100px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+   cursor: pointer;
+}
+
+.hamburger-line-1,
+.hamburger-line-2,
+.hamburger-line-3 {
+	background-color: #00AEFF;;
+	width: 1.78rem;
+	height: 0.2rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.hamburger-line-1,
+.hamburger-line-2 {
+	margin-bottom: 6px;
+}
+
+/* Show class to  change the state of hambuger icon cross*/
+.show .hamburger-line-1 {
+	transform: translateY(10px) rotate(135deg);
+}
+
+.show .hamburger-line-2 {
+	opacity: 0;
+}
+
+.show .hamburger-line-3 {
+	transform: translateY(-8.6px) rotate(-135deg);
+}
+
+/*Show */
+
+header ul.show {
+	position: fixed;
+	background-color: #fff;
+	top: 8vh;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	margin-top: -8vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul.show li {
+	margin: 1rem 0;
+}
+
+
+@media (min-width: 850px) {
+	.nav-lists {
+		display: flex;
+	}
+
+	.hamburger-icon {
+		display: none;
+	}
+}
+
+
+@media (min-width: 1100px) {
+
+   .profile {
+      display: flex;
+   }
+
+   .other {
+      display: block
+   }
+
+}
+
