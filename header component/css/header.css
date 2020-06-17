@@ -6,16 +6,20 @@
 
 
 .container {
-   max-width: 1200px;
-   padding: 10px;
+   padding: 5px;
    margin: 0 auto;
+   background-color: #ffff;
 }
 
 .nav-bar {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 75px;
+}
+
+.box {
+   height: 60px;
+  border-right: 1px solid #bdbdbd42;
 }
 
 .nav-lists {
@@ -32,10 +36,18 @@
 
 .nav-list-icon {
    margin-bottom: 2px;
+   width: 18px;
+   height: 18px;
 }
 
 .nav-logo {
    z-index: 11;
+}
+
+.nav-logo img {
+   height: 35px;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 
 .chat {
@@ -46,6 +58,7 @@
    text-decoration: none;
    color: #000;
    font-weight: bold;
+   font-size: 12px;
 }
 
 .form-control {
@@ -72,13 +85,32 @@
    display: none;
 }
 
+.profile h4 {
+   font-size: 12px;
+}
+
+.profile h4 span {
+   color: #bdbdbd42;
+   margin-left: 5px;
+}
+
+.profile p {
+   margin-top: 7px;
+   font-size: 12px;
+}
+
+.profile p span {
+   color: green;
+}
+
 .img-profile {
    padding: 0 10px;
 }
 
 .other {
+   font-size: 12px;
    display: none;
- text-align: center;
+   text-align: center;
 }
 
 
@@ -148,7 +180,11 @@ header ul.show li {
 
 	.hamburger-icon {
 		display: none;
-	}
+   }
+   
+   .box {
+      display: none;
+   }
 }
 
 
@@ -159,7 +195,11 @@ header ul.show li {
    }
 
    .other {
-      display: block
+      display: block;
+   }
+
+   .box {
+      display: block;
    }
 
 }
