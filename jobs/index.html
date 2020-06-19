@@ -1,242 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=10">
-    <title>jobs</title>
-    <link rel="stylesheet" type="text/css" href="./css/job.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <link>
-     <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
-
-</head>
-<body>
-    <div class="flexContainer">
-        <main class="col-9">
-            <div class="top">
-              <p>YOUR DREAM JOB IS HERE</p> 
-               <hr>
-               <div id="search">
-                <input type="text" placeholder="search jobs">
-                <span class="material-icons">tune</span>
-                <button type="submit" class="searchButton"><i class="fa fa-search"></i>
-                </button>
-               </div>  
-            </div>
-           
-               <div class="under"> 
-                   <div class="line"></div><p>JOBS FOR YOU</p><div class="line"></div>
-               </div>
-            
-      
-
-            <div class="first4">
-                <div class="box">
-                    <div class="pics">
-                        <img src="./img/jobs/upwork.jpg">
-                    </div>
-                    <div class="insideupwork">
-                        <h4>UI/UX Design</h4>
-                        <h5>Upwork <span>Remote only</span></h5>
-                        <p>On Upwork you'll find a range of top freelancers and agencies, from developers and development agencies to designers and creative agencies, copywriters,  </p>
-                        
-                    </div>
-                  <div>
-                      <a href="#">
-                          <button> more</button>
-                      </a>
-                      
-                  </div>
-                  </div>
-                <div class="box">
-                  <div class="pics">
-                      <img src="./img/jobs/facebook.jpg">
-                  </div>
-                  <div class="insidefacebook">
-                      <h4>Product designer</h4>
-                      <h5> Facebook<span>CA, USA</span> </h5>
-                      <p>Founded in 2004, Facebook's mission is to give people the power to build community and bring the world closer together. People use our products to stay.. </p>
-                      
-                  </div>
-                <div>
-                    <a href="#">
-                        <button> more</button>
-                    </a>
-                    
-                </div>
-                </div>
-                <div class="box">
-                    <div class="pics">
-                        <img src="./img/jobs/google.jpg"> 
-                    </div>
-                  <div class="insideGoogle">
-                    <h4>Part-time UX designer</h4>
-                    <h5>Google <span>International</span></h5>
-                    <p>Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking.</p>
-                    
-                 </div>
-               <div>
-                   <a href="#">
-                    <button> more</button>
-                   </a>
-               </div>
-                </div>
-                <div class="box">
-                    <div class="pics">
-                        <img src="./img/jobs/linkedin.jpg">
-                    </div>
-                    <div class="insidelinkin">
-                        <h4>Web designer</h4>
-                        <h5>LinkedIn<span>CA, USA</span></h5>
-                        <p>LinkedIn, the world's largest professional network. The mission of LinkedIn is simple: connect the world's professional.</p>
-                       
-                    </div>
-                    <div>
-                        <a href="#">
-                            <button>more</button>
-                        </a>
-                       
-                    </div>
-                </div>
-             </div>
-            <div>
-                <div class="under"> 
-                    <div class="line"></div>
-                    <p>NEW JOBS</p>
-                    <div class="line"></div>
-                </div>
-            
-            </div>
-            <div class="last2">
-               <div class="box">
-                <div class="pics">
-                    <img src="./img/jobs/instagram.jpg">
-                </div>
-                 <div class="insideinsta">
-                    <h4>UI designer</h4>
-                    <h5>Instagram <span>CA, USA </span></h5>
-                    <p> Instagram is a photo and video-sharing social networking service owned by Facebook, Inc.</p>
-                    
-                 </div>
-                <div>
-                <a href="#">
-                    <button>more</button>
-                </a>
-                </div>
-               </div>
-              <div class="box">
-                <div class="pics">
-                    <img src="./img/jobs/peris.jpg">
-                </div>
-                 <div class="insideperis">
-                    <h4>Product designer</h4>
-                    <h5>Periscope  <span>Remote only</span></h5>
-                    <p>eriscope is a live video streaming app for Android and iOS developed by Kayvon Beykpour and Joe Bernstein and acquired by Twitter before launch in 2015. </p>
-                    
-                 </div>
-              <div>
-                  <a href="#">
-                    <button>more</button>
-                  </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs/linkedin</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+  </head>
+  <body>
+    <section class="flex main-container justify-between">
+      <main>
+        <section class="search-bar">
+          <h2>Your dream job is here</h2>
+          <form class="search-input">
+            <input type="search" placeholder="Search jobs" />
+            <img class="search-filter" src="./img/icons/filter.svg" />
+            <button type="submit">
+              <img src="./img/icons/search.svg" />
+            </button>
+          </form>
+        </section>
+        <section class="jobs-container">
+          <header class="jobs-heading flex justify-between items-center">
+            <hr />
+            <h2>jobs for you</h2>
+            <hr />
+          </header>
+          <article class="job-card">
+            <img src="./img/logos/upwork.jpg" />
+            <div class="job-detail">
+              <h3>UX/UI designer</h3>
+              <div class="job-location">
+                <span>Upwork</span>
+                <span>Remote only</span>
               </div>
-               </div>
+              <p>
+                On Upwork you'll find a range of top freelancers and agencies,
+                from developers and development agencies to designers and
+                creative agencies, copywriters,
+              </p>
             </div>
-    
-        </main>
-        <aside class="col-3">
-            <div class="button">
-                <a href="#">
-                    <button class="btn2">post a job</button>
-                </a>
-            
+            <button name="expand job 1" type="button">
+              more
+            </button>
+          </article>
+          <article class="job-card">
+            <img src="./img/logos/facebook.jpg" />
+            <div class="job-detail">
+              <h3>Product designer</h3>
+              <div class="job-location">
+                <span>Facebook</span>
+                <span>CA, USA</span>
+              </div>
+              <p>
+                Founded in 2004, Facebook's mission is to give people the power to build community and bring the world closer together. People use our products to stay..
+              </p>
             </div>
+            <button name="expand job 1" type="button">
+              more
+            </button>
+          </article>
 
-                <div class="first">
-                    <h3>my searches<span>edit list</span></h3>
-                  <hr>
-                  <div class="grey">
-                      <a href="#">UI/UX designer <span>+240</span></a>
-                     <span class="material-icons">notifications_off
-                     </span>
-                      <h4>Remote</h4>
-                      
-                  </div>
-                  <div class="grey">
-                    <a href="#">Web designer </a>
-                    <span class="material-icons">
-                    notifications_none
-                    </span>
-                    <h4>Los-Angeles, CA</h4>
-                  </div>
-                  <div class="grey">
-                    <a href="#">Graphic designer </a>
-                       <span class="material-icons">
-                      notifications_none
-                    </span>
-                    <h4>Malaysia, Kuala Lumpur</h4>
-                 
-                  </div>
+          <article class="job-card">
+            <img src="./img/logos//google.jpg" />
+            <div class="job-detail">
+              <h3>Part-time UX designer</h3>
+              <div class="job-location">
+                <span>Google</span>
+                <span>International</span>
+              </div>
+              <p>
+                Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking.
+              </p>
+            </div>
+            <button name="expand job 1" type="button">
+              more
+            </button>
+          </article>
+          <article class="job-card">
+            <img src="./img/logos/linkedin.jpg" />
+            <div class="job-detail">
+              <h3>Web designer</h3>
+              <div class="job-location">
+                <span>LinkedIn</span>
+                <span>CA, USA</span>
+              </div>
+              <p>
+                LinkedIn, the world's largest professional network. The mission of LinkedIn is simple: connect the world's professional.
+              </p>
+            </div>
+            <button name="expand job 1" type="button">
+              more
+            </button>
+          </article>
+          
+        </section>
+        <section>
+          <header class="jobs-heading flex justify-between items-center">
+            <hr />
+            <h2>New jobs</h2>
+            <hr />
+          </header>
+          <article class="job-card">
+            <img src="./img/logos/instagram.jpg" />
+            <div class="job-detail">
+              <h3>UI designer</h3>
+              <div class="job-location">
+                <span>Instagram </span>
+                <span>CA, USA </span>
+              </div>
+              <p>
+                Instagram is a photo and video-sharing social networking service owned by Facebook, Inc.
+              </p>
+            </div>
+            <button name="expand job 1" type="button">
+              more
+            </button>
+          </article>
+
+          <article class="job-card">
+            <img src="./img/logos/peris.jpg" />
+            <div class="job-detail">
+              <h3>Product designer</h3>
+              <div class="job-location">
+                <span>Periscope </span>
+                <span>Remote only</span>
+              </div>
+              <p>
+                eriscope is a live video streaming app for Android and iOS developed by Kayvon Beykpour and Joe Bernstein and acquired by Twitter before launch in 2015.
+              </p>
+            </div>
+            <button name="expand job 1" type="button">
+              more
+            </button>
+          </article>
+        </section>
+      </main>
+
+      <aside>
+        <div class="post-job" >
+          <button name="post a job" type="button">
+            Post a job
+          </button>
+        </div>
+        <section>
+          <header class="top-header1">
+            <h2>my searches</h2>
+
+            <a href="#">
+              Edit list
+            </a>
+          
+          </header>
+          <hr>
+          <section>
+            <article class="side-first">
+              <div>
+                <div class="first-span">
+                  <h3>
+                    UX/UI designer
+                  </h3>
+                  <span>+240</span>
                 </div>
-                <div class="second">
-                    <h3>Tracked jobs</h3>
-                    <hr>
-                    <div class="shift"> 
-                        <img src="./img/jobs/upwork.jpg">
-                        <div>
-                            <a href="#">UX/UI Designer</a>
-                            <h5>Upwork</h5>
-                        </div>
-                       
-                    </div>
-                    <div class="shift">
-                        <img src="./img/jobs/facebook.jpg">
-                        <div>
-                            <a href="#">Product designer</a>
-                            <h5>Facebook</h5>
-                        </div>
-                        
-                    </div>
+                <span class="material-icons">
+                  notifications_off
+                </span>
+                <span class="pan" >Remote</span>
+              </div>
+            </article>
+            <article class="side-first">
+              <div>
+                <div>
+                  <h3>
+                    Web designer
+                  </h3>
                 </div>
-                <div class="third">
-                     <h2>Articles for you</h2>
-                     <hr>
-                     <div class="child">
-                         <div>
-                            <img src="./img/jobs/bg1.jpg">
-                         </div>
-                        
-                         <div class="words">
-                            <a href="#">The guide Apply for a job</a>
-                            <h4>12,932 viewers</h4>
-                         </div>
-                        
-                     </div>
-                     <div class="child">
-                         <div>
-                            <img src="./img/jobs/bg2.jpg">
-                         </div>
-                        
-                        <div class="words">
-                            <a href="#">Your dream job and how you can g</a>
-                            <h4>9,112 viewers</h4>
-                        </div>
-                        
-                     </div>
-                     <div class="child">
-                         <div>
-                            <img src="./img/jobs/bg3.jpg">
-                         </div>
-                       
-                         <div class="words">
-                            <a href="#">Now you know it.15 steps to find job</a>
-                            <h4>7,221 viewers</h4>
-                         </div>
-                       
-                       
-                     </div>
-                </div> 
-        </aside>
-   </div>
-</body>
+                <span class="material-icons">
+                  notifications_none
+                </span>
+              </div>
+              <span class="pan" >Los-Angeles, CA</span>
+            </article>
+            <article class="side-first">
+              <div>
+                <div>
+                  <h3>
+                    Graphic designer 
+                  </h3>
+                </div>
+                <span class="material-icons">
+                  notifications_none
+                </span>
+              </div>
+              <span class="pan" >Malaysia, Kuala Lumpur</span>
+            </article>
+          </section>
+        </section>
+        <section>
+          <header class="top-header2">
+            <h2>Tracked jobs</h2>
+          </header>
+          <hr>
+          <article class="side-second">
+            <img src="./img/logos/upwork.jpg" />
+            <div>
+              <h3>UX/UI designer</h3>
+              <span>Upwork</span>
+            </div>
+          </article>
+          <article class="side-second">
+            <img src="./img/logos/facebook.jpg" />
+            <div class="">
+              <h3>Product designer</h3>
+              <span>Facebook</span>
+            </div>
+          </article>
+          
+        </section>
+        <section>
+          <header class="top-header3">
+            <h2>Articles for you</h2>
+          </header>
+
+          <section>
+            <article class="side-third">
+              <img alt="article 1" src="./img/backgrounds/bg1.jpg" />
+              <div class="basic">
+                <p>
+                  The guide. Apply for a job
+                </p>
+                <span>
+                  12,932 viewers
+                </span>
+              </div>
+            </article>
+            <article class="side-third">
+              <img alt="article 1" src="./img/backgrounds/bg2.jpg" />
+              <div class="basic">
+                <p>
+                  Your dream job and how you can g
+                </p>
+                <span>
+                  9,112 viewers
+                </span>
+              </div>
+            </article>
+            <article class="side-third">
+              <img alt="article 1" src="./img/backgrounds/bg3.jpg" />
+              <div class="basic">
+                <p>
+                  Now you know it.15 steps to find job
+                </p>
+                <span>
+                  7,221 viewers
+                </span>
+              </div>
+            </article>
+          </section>
+        </section>
+      </aside>
+    </section>
+  </body>
 </html>
