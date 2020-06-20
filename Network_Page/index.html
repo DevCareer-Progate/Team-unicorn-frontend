@@ -3,43 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Network Page">
     <script
       src="https://kit.fontawesome.com/9b1c8d52ed.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Network</title>
   </head>
   <body>
-    <div class="container">
-      <div id="sidebar">
-        <ul>
-          <div class="list-item">
-            <i class="fas fa-link"></i><li><a href="#">CONNECTIONS</a></li>
-            <p class="digit">1,098</p>
-          </div>
-          <div class="list-item active">
-            <i class="fas fa-bullseye"></i><li><a href="#">INVITATIONS</a></li>
-            <p class="digit">2</p>
-          </div>
-          <div class="list-item">
-            <i class="fas fa-archive"></i><li><a href="#">TEAMMATES</a></li
-            ><p class="digit"></p>
-          </div>
-          <div class="list-item">
-            <i class="fas fa-user-friends"></i><li><a href="#">GROUPS</a></li
-            ><p class="digit">6</p>
-          </div>
-          <div class="list-item">
-            <i class="fas fa-layer-group"></i><li> <a href="#">PAGES</a></li
-            ><p class="digit">28</p>
-          </div>
-          <div class="list-item">
-            <i class="fas fa-hashtag"></i><li><a href="#">HASHTAGS</a></li
-            ><p class="digit">8</p>
-          </div>
-        </ul>
+
+    <div class="dropdown">
+   <button class=" btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  
+  <div id="sidebar">
+    <ul>
+      <div class="list-item">
+        <i class="fas fa-link"></i><li><a href="#">CONNECTIONS</a></li>
+        <p class="digit">1,098</p>
       </div>
+      <div class="list-item active">
+        <i class="fas fa-bullseye"></i><li><a href="#">INVITATIONS</a></li>
+        <p class="digit">2</p>
+      </div>
+      <div class="list-item">
+        <i class="fas fa-archive"></i><li><a href="#">TEAMMATES</a></li
+        ><p class="digit"></p>
+      </div>
+      <div class="list-item">
+        <i class="fas fa-user-friends"></i><li><a href="#">GROUPS</a></li
+        ><p class="digit">6</p>
+      </div>
+      <div class="list-item">
+        <i class="fas fa-layer-group"></i><li> <a href="#">PAGES</a></li
+        ><p class="digit">28</p>
+      </div>
+      <div class="list-item">
+        <i class="fas fa-hashtag"></i><li><a href="#">HASHTAGS</a></li
+        ><p class="digit">8</p>
+      </div>
+    </ul>
+  </div>
+  </div>
+    </div>
+
+<!--/.Navbar-->
+
+
+    <div class="container">
+     
 
       <!-- Content -->
 
@@ -76,12 +93,14 @@
               Microsoft so we can work on a project together?
             </p>
           </div>
-          <div id="accept-button">
-            <button class="btn-blue"><a href="#">ACCEPT</a></button>
+          <div class="buttons">
+
+            <div id="accept-button">
+              <button class="btn-blue"><a href="#">ACCEPT</a></button>
+            </div>
+            <div id="decline-button">
+              <button class="btn-1"><a href="#">DECLINE</a></button></div>
           </div>
-          <div id="decline-button">
-            <button class="btn"><a href="#">DECLINE</a></button></div
-          >
         </div>
         <div id="notification-card">
           <div class="bio">
@@ -98,15 +117,16 @@
           <div class="summary">
             <p class="message"
               >Hey, I saw some of your works, I like it! Can you come to
-              Microsoft so we can work on a project together?
+              Google to test the new Android 11?
             </p>
           </div>
-          <div id="accept-button">
-            <button class="btn-blue"><a href="#">ACCEPT</a></button>
+          <div class="buttons">
+            <div id="accept-button">
+              <button class="btn-blue"><a href="#">ACCEPT</a></button>
+            </div>
+            <div id="decline-button">
+              <button class="btn-1"><a href="#">DECLINE</a></button></div>
           </div>
-          <div id="decline-button">
-            <button class="btn"><a href="#">DECLINE</a></button></div
-          >
         </div>
 
         <!-- CONNECTION SECTION -->
@@ -116,7 +136,8 @@
           </p>
         </div>
 
-        <div id="connections"  class="card">
+        <div class="wrap">
+          <div id="connections"  class="card-1">
             <div id="connection-card">
                   <div class=" fix">
                     <img src="./img/elon.jpg" alt="profile-image" />
@@ -166,8 +187,12 @@
                     </div>
                   </div>
               </div>
+        </div>   
         </div>
       </div>
     </div>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
 </html>
