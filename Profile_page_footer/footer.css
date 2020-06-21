@@ -3,31 +3,28 @@
     }
     /* IMPORT FONT-FACE */
     
-    @font-face {
-        font-family: 'Gotham Pro';
-        src: url(sanstion_light.woff);
-    }
-    
-    body {
-        font-family: 'Gotham Pro';
-        font-size: 12px;
-        background-color: #F7F9FB;
-    }
-    
     a,
     li {
         text-decoration: none;
     }
+
     
     footer {
-        max-width: 1440px;
-        margin-left: 130px;
-        margin-right: 130px;
-        margin-top: 30px;
-        margin-bottom: 35px;
-        background-color: #F7F9FB;
-        ;
+        margin-top: 10px;
+        border-top: 1px solid #E7E7E7;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
     }
+
+    /*LOGO WRAPPER */
+    .logo-wrapper {
+        float: left;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
     /* BLUE LINKEDIN SPAN */
     
     .blue {
@@ -35,53 +32,62 @@
     }
     /* NAVIGATIONS*/
     
-    li {
+    footer li {
         list-style: none;
         padding-bottom: 5px;
     }
     
-    .link a {
+    footer .link a {
         color: #333;
     }
     
-    .flex-box {
+    footer .flex-box {
+        padding-top: 20px;
         display: flex;
-        flex-direction: rows;
         justify-content: space-between;
     }
+
+    /* FOOTER SEGMENTS */
+    footer .first-links,
+    .second-links,
+    .third-links {
+        margin-right: 50px;
+    }
     
-    .nav-bar {
-        position: relative;
-        left: 10%;
+    footer .nav-bar {
+        margin-top: 10px;
         bottom: 6rem;
     }
     
-    .nav-bar h3 {
-        padding-left: 38px;
+    footer .nav-bar h3 {
         padding-top: 10px;
     }
     /* QUESTION SECTION */
     
-    .question-box {
+    footer .question-box {
         display: flex;
         flex-direction: column;
         position: relative;
         bottom: 3rem;
     }
+
+    footer .question-box h4 {
+        margin-bottom: 30px;
+    }
     /* FONT AWESOME ICONS */
     
-    .icons {
+    footer .icons {
         position: relative;
         left: 9rem;
         bottom: 16%;
         color: #fff;
     }
     
-    .sett {
+    footer .sett {
         color: #0275B1;
     }
     
-    .set {
+    footer .set {
         width: 170px;
         height: 32px;
         padding: 3px 10px;
@@ -89,7 +95,7 @@
         border-radius: 4px;
     }
     
-    .quest {
+    footer .quest {
         width: 170px;
         height: 32px;
         padding: 3px 10px;
@@ -99,39 +105,53 @@
     }
     /*QUESTION  PLACEHOLDER*/
     
-    input.quest::placeholder {
+    footer input.quest::placeholder {
         font-size: 10px;
     }
     
-    .quest::placeholder {
+    footer .quest::placeholder {
         text-transform: uppercase;
         color: #fff;
         font-size: 12px;
     }
     /*SETTINGS  PLACEHOLDER*/
     
-    input.set::placeholder {
+    footer input.set::placeholder {
         font-size: 9px;
     }
     
-    .set::placeholder {
+    footer .set::placeholder {
         text-transform: uppercase;
         border-radius: 4px;
         font-size: 12px;
     }
     /* LANGUAGE DROP-DOWN */
     
-    .drop-down {
+    footer .drop-down {
         display: block;
         position: relative;
+        margin-left: 40px;
         bottom: 3rem;
     }
     
-    #lang {
+    footer #lang {
+        margin-top: 30px;
         text-transform: uppercase;
-        margin-right: 50px;
+        margin-right: 20px;
         width: 270px;
         height: 32px;
         border-radius: 4px;
         font-size: 9px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        footer {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        footer {
+            display: none;
+        }
     }
