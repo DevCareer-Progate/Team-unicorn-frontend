@@ -2,33 +2,27 @@
   font-family: "Gotham Pro";
   src: url(../fonts/GothaProReg.otf );
 }
-
 * {
-  box-sizing: border-box;
-}
-
-html {
-  max-width: 1440px;
+  font-family: "Gotham Pro";
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #e5e5e5;
-  font-family: "Gotham Pro";
+  background-color: #F7F9FB;
   font-size: 16px;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #0275B1;
 }
 
-li {
+.list-item li {
   list-style: none;
   margin-right: 1rem;
 }
-ul {
+.list-item ul {
   padding: 0;
   margin: 0;
   width: 400px;
@@ -36,9 +30,11 @@ ul {
 }
 
 /* Section 1: SIDEBAR */
-.container {
+.network-container {
   display: grid;
   grid-template-columns: 1fr;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .fas {
@@ -50,11 +46,11 @@ ul {
   background-color: #fff;
   margin: 0;
   display: flex;
+  margin-top: 2%;
   flex-direction: row;
   border-radius: 0.5rem;
   width: 280px;
   font-size: 12px;
-  height: 320px;
 }
 
 .digit {
@@ -66,7 +62,7 @@ ul {
 div.list-item {
   display: grid;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 1px solid #f4f4f4;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -165,16 +161,21 @@ div.list-item {
   margin-right: -50%;
 }
 
-img {
+.image img {
   width: 4rem;
   height: 4rem;
   background-position: center;
   border-radius: 30px;
 }
 
-#dropdownMenuButton{
-margin: 1rem 0 0 1rem
+
+.fix img {
+  width: 4rem;
+  height: 4rem;
+  background-position: center;
+  border-radius: 30px;
 }
+
 
 .summary {
   width: 35%;
@@ -293,11 +294,208 @@ margin: 1rem 0 0 1rem
   display: flex ;
 }
 
+/*-------OTHER POPUP MODAL--------*/
+
+.body-container {
+  position: relative;
+
+}
+
+.body-container#blur.active {
+  filter: blur(2px);
+  pointer-events: none;
+  overflow: hidden;
+  position: fixed;
+}
+
+#popup {
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  background: #FFFFFF;
+  width: 400px;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup .modal-top {
+  display: flex;
+  width: 450px;
+  height: 50px;
+}
+
+#popup .modal-top .close-modal {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 40px;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+
+#popup .modal-title h2 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.help-unit {
+  color: #0275B1;
+  font-size: 12px;
+  line-height: 11px;
+  margin-top: 10px;
+  margin-left: 30px;
+
+}
+
+#popup hr {
+  border: 1px solid #F4F4F4;
+  margin-top: 10px;
+}
+
+.modal-content {
+  padding: 20px 30px;
+}
+
+.linkedin-learning .linkedin-more {
+  display: flex;
+  background: #0275B1;
+  padding: 10px 30px;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.linkedin-learning .linkedin-more img {
+  width: 24px;
+  height: 24px;
+}
+
+.linkedin-more .learning-info {
+  margin-left: 20px;
+}
+
+.linkedin-more .learning-info h2 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.linkedin-more .learning-info p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.more-info {
+  border-bottom: 1px solid #bdbdbd42;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.card {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #bdbdbd42;
+  border-radius: 4px;
+}
+
+.card img {
+  height: 18px;
+  width: 18px;
+  margin-right: 12px;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+.card-1,
+.card-3,
+.card-5 {
+  margin-right: 5%;
+}
+
+.business-services {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bdbdbd42;
+}
+
+.business-services h2 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.business-card {
+  border: 1px solid #bdbdbd42;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+}
+
+.business-card h4 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.business-card p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.linkedin-premium {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #D8C281 0%, #AC9B69 100%);
+  border-radius: 4px;
+  color: white;
+}
+
+.linkedin-premium h4 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.linkedin-premium p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+
 
 /* MEdia Query For 320px and above */
 @media (max-width : 800px){
   
-  .container{
+  .network-container{
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -310,7 +508,7 @@ margin: 1rem 0 0 1rem
     grid-template-columns: 1fr;
     width: 100%;
   }
-  .card-1{
+  .card-one{
     align-items: center;
   }
   .wrap{
@@ -345,7 +543,7 @@ margin: 1rem 0 0 1rem
 @media only screen 
 and (min-device-width : 700px) 
 and (max-device-width : 1024px){
-  .container{
+  .network-container{
     grid-template-columns: 1fr;
   }
   .btn-blue{
@@ -355,7 +553,7 @@ and (max-device-width : 1024px){
     width: auto;
   }
   #sidebar{
-    margin: 0;
+    margin-top: 5%;
   }
 }
 

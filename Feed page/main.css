@@ -624,6 +624,7 @@ textarea {
 #popup {
   position: fixed;
   overflow-y: scroll;
+  overflow-x: hidden;
   top: 0;
   right: 0;
   background: #FFFFFF;
