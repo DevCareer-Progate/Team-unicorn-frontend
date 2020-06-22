@@ -1,0 +1,92 @@
+.wrapper {
+   margin: 0 auto;
+   padding: 1rem;
+   max-width: 1200px;
+}
+
+.left-top ul {
+   border-radius: 4px;
+   background-color: #fff;
+   list-style-type: none;
+}
+
+.left-top ul li {
+   position: relative;
+   padding: 5px 10px;
+}
+
+.left-top ul li.active-link {
+   padding: 15px 10px;
+}
+
+.left-top ul li .text {
+   padding-left: 4px;
+}
+
+.left-top ul li .text + span{
+   position: absolute;
+   right: 20px;
+}
+
+.right-top {
+
+}
+
+.right-top .buttons {
+   display: flex;
+   align-items: flex-end;
+}
+
+.right-top .buttons button{
+  width: 150px;
+   border: none;
+   font-weight: bold;
+}
+
+.right-top .buttons .received {
+   background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+   color: #fff;
+   padding: 15px;
+  
+   border-radius: 4px 4px 0px 0px;
+}
+.right-top .buttons .sent {
+   background: #FFFFFF;
+   padding: 10px;
+   border: 1px solid #E7E7E7;
+}
+
+.connection-profile {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.connection-message {
+   max-width: 200px;
+}
+
+.flex {
+   display: flex;
+}
+
+@media (min-width: 768px) {
+   
+   .wrapper {
+      display: grid;
+      grid-template-columns: 290px 3fr;
+      gap: 40px;
+   }
+
+   .left-top {
+      grid-row: 1 / span 2;
+   }
+
+.connection-details {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+}
+
+}
