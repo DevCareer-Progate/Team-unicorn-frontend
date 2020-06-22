@@ -1,8 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     box-sizing: border-box; 
-    background-color: #E5E5E5;
+    background-color: #f7f9fb;
+    font-family: 'Gotham Pro';
 }
-.container {
+
+header, footer {
+    width: 100%;
+}
+
+.body-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +21,7 @@ body{
 .message-list-container-button{
     border-radius: 4px;
     width: 20%;
-    margin: 10% 2% 10% 7%;
+    margin: 5% 2% 5% 7%;
 }
 .message-list-container{
     background-color: #FCFDFD;
@@ -19,7 +30,7 @@ body{
     
     background-color: #FCFDFD;;
     width: 60%;
-    margin: 10% 5% 10% 2%;
+    margin: 5% 5% 5% 2%;
     border-radius: 4px;
 }
 .chat-list {
@@ -144,15 +155,10 @@ body{
     flex: 1;
 }
 .input-btn {
-     background: linear-gradient(180deg, #007785, 0%, #0E6795 100%);
-  color: white;
-  padding: 0 15px;
   border: none;
     flex: 0;
 }
-.input-btn img {
-    border: 1px solid #FFFFFF;
-}
+
 .chat-send .me {
   padding: 6px 10px;
   border-radius: 4px 0 4px 0;
