@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a LinkedIn redesigned website" />
+
+    <!-- FONT-AWESOME KIT  -->
+    <script
+      src="https://kit.fontawesome.com/9b1c8d52ed.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS STYLING -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./header component/css/header.css" />
+    <link rel="stylesheet" href="./Profile_page_footer/footer.css" />
+
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <div class="body-container" id="blur">
+      <header>
+        <div class="container">
+          <nav class="nav-bar">
+            <div class="nav-logo">
+              <img src="./header component/img/Logo.png" alt="" />
+            </div>
+            <div class="box"></div>
+            <ul class="nav-lists">
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="./header component/img/rss.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="./Feed page/index.html">FEED</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="./header component/img/users.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="./Network_Page/index.html">NETWORK</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="./header component/img/briefcase.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="./jobs/index.html">JOBS</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon chat"
+                  src="./header component/img/chat.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="./chat page/index.html">CHAT</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="./header component/img/bell.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="./">NOTICES</a>
+              </li>
+            </ul>
+            <div class="box"></div>
+            <form>
+              <div class="form-control">
+                <button class="search-btn">
+                  <img src="./header component/img/search.png" alt="" />
+                </button>
+                <input type="text" placeholder="Search" class="search-input" />
+              </div>
+            </form>
+            <div class="box"></div>
+            <div class="profile">
+              <img
+                class="img-profile"
+                src="./header component/img/profile-picture.png"
+                alt=""
+              />
+              <div>
+                <h4>D. KARGAEV <span>YOU</span></h4>
+                <p>
+                  367 views today
+                  <span
+                    >+32
+                    <img
+                      src="./header component/img/arrow-up-right.png"
+                      alt=""
+                  /></span>
+                </p>
+              </div>
+            </div>
+            <div class="box"></div>
+            <div class="other" onclick="toggle()" style="cursor: pointer;">
+              <img src="https://img.icons8.com/android/12/000000/more.png" />
+              <h4>OTHER</h4>
+            </div>
+            <div class="box" style="margin-right: 20px;"></div>
+            <div class="hamburger-icon">
+              <div class="hamburger-line-1"></div>
+              <div class="hamburger-line-2"></div>
+              <div class="hamburger-line-3"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- MAIN CONTENT CONTAINER -->
+      <div id="container">
+        <!-- MAIN CONTENT SECTION -->
+        <div id="content">
+          <!-- HEADER SECTION : PLEASE FIX ME -->
+          <div id="header">
+            <div id="Profile-section-header">
+              <div class="border-top">
+                <i class="fas fa-upload"></i>
+              </div>
+              <div class="border-top">
+                <i class="far fa-edit"></i>
+                <p>EDIT PROFILE</p>
+              </div>
+              <div class="border-top"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+          </div>
+
+          <!-- NOTIFICATION BAR -->
+          <div id="notif-bar-top">
+            <div class="received">
+              <a href="#">RECEIVED</a>
+            </div>
+            <div class="white-block">
+              <a href="#">ACTIVITY & INTERESTS</a>
+            </div>
+            <div class="white-block">
+              <a href="#">ARTICLES (3)</a>
+            </div>
+          </div>
+
+          <!-- ABOUT SECTION  -->
+          <div id="about">
+            <h3>About</h3>
+            <p>
+              I'm more experienced in eCommerce web projects and mobile banking
+              apps, but also like to work with creative projects, such as
+              landing pages or unusual corporate websites.
+            </p>
+            <a href="#" class="link-text">SEE MORE</a>
+          </div>
+
+          <!-- PROJECTS SECTION -->
+          <div id="projects">
+            <h3>Projects <span class="grey-text"> 3 of 12</span></h3>
+            <div class="showcase">
+              <div class="box">
+                <img src="./img/ext.png" alt="zara" />
+                <h5>Zara redesign concept</h5>
+                <p class="small">UX/UI design, 15.07.2019</p>
+              </div>
+              <div class="box">
+                <img src="./img/ext-1.png" alt="zara" />
+                <h5>SCTHON event brand identityt</h5>
+                <p class="small">SCTHON event brand identity</p>
+              </div>
+              <div class="box">
+                <img src="./img/ext-2.png" alt="zara" />
+                <h5>Drozd. Brand identity. 2016</h5>
+                <p class="small">Graphic design, 03.04.2016</p>
+              </div>
+            </div>
+            <a href="#" class="link-text">SHOW ALL (12)</a>
+          </div>
+
+          <!-- SKILLS SECTION -->
+          <div id="skills">
+            <h3>Skills & Endorsements</h3>
+
+            <!-- SKILL BOXES -->
+            <div id="showcase-skills">
+              <!-- BOX 1 -->
+              <div class="skill-box">
+                <h5>User experience (UX)</h5>
+                <p class="link-text"><strong>6</strong></p>
+                <div class="img-collage">
+                  <img src="./img/collage/Photo-1.png" alt="profile-image" />
+                  <img src="./img/collage/Photo.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-2.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-3.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-4.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-5.png" alt="profile-image" />
+                </div>
+              </div>
+
+              <!-- BOX 2 -->
+              <div class="skill-box">
+                <h5>User interface (UI)</h5>
+                <p class="link-text"><strong>7</strong></p>
+                <div class="img-collage">
+                  <img src="./img/collage/Photo-3.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-7.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-2.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-9.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-8.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-11.png" alt="profile-image" />
+                  <img src="./img/collage/count.png" alt="profile-image" />
+                </div>
+              </div>
+
+              <!-- BOX 3 -->
+              <div class="skill-box">
+                <h5>Brand identity</h5>
+                <p class="link-text"><strong>8</strong></p>
+                <div class="img-collage">
+                  <img src="./img/collage/Photo-9.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-8.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-4.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-7.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-6.png" alt="profile-image" />
+                  <img src="./img/collage/Photo-12.png" alt="profile-image" />
+                  <img src="./img/collage/count (1).png" alt="profile-image" />
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="link-text">SHOW ALL (17)</a>
+          </div>
+
+          <!-- EXPERIENCE SECTION -->
+          <div id="experience">
+            <h3>Experience</h3>
+
+            <!-- JOBS BOXES -->
+
+            <div class="jobs">
+              <img src="./img/Group (1).png" alt="globe-logo" />
+              <div class="description">
+                <h4>Freelance UI/UX Designer</h4>
+                <p>
+                  Self-Employed <span class="grey-text">Around the world</span>
+                </p>
+                <p>
+                  Jun 2016 - Present <span class="link-text"> 3yrs 3mos</span>
+                </p>
+                <p>
+                  Work with clients and web studios as freelancer. Work in next
+                  areas: eCommerce web projects; creative landing pages; iOs and
+                  Android apps; corporate web sites and corporate identity
+                  sometimes.
+                </p>
+              </div>
+            </div>
+
+            <div class="jobs" id="no-border">
+              <img src="./img/Group (2).png" alt="globe-logo" />
+              <div class="description">
+                <h4>UI/UX Designer</h4>
+                <p>Upwork <span class="grey-text"> International</span></p>
+                <p>Jun 2019 - Present <span class="link-text"> 3mos</span></p>
+                <p>
+                  New experience with Upwork system. Work in next areas: UX/UI
+                  design, graphic design, interaction design, UX research.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- EDUCTION SECTION -->
+          <div id="education">
+            <h3>Education</h3>
+            <div class="jobs" id="no-border">
+              <img src="./img/Group (3).png" alt="globe-logo" />
+              <div class="description">
+                <h4>Moscow State Linguistic University</h4>
+                <p>
+                  Bachelor's degree Field Of StudyComputer and Information
+                  Systems Security/Information Assurance
+                </p>
+                <span class="grey-text year small">2013 — 2017</span>
+                <p>Additional English classes and UX profile courses​.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+       <!--FOOTER-->
+       <footer id="footer">
+        <div class="footer_wrapper">
+          <div class="logo-wrapper">
+            <a href="linkedIn.com"
+              ><i class="logo1 fa fa-linkedin-square fa-3x"></i
+            ></a>
+            <p>Linked<span class="blue">In</span></p>
+          </div>
+          <div class="nav-bar">
+            <h3>Navigations</h3>
+            <div class="flex-box">
+              <div class="first-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                  <li>
+                    <a href="#">Advertising</a>
+                  </li>
+                  <li>
+                    <a href="#">Small Business</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="second-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">Talent Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Marketing Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Sales Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Safety Center</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="third-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">Community Guidelines</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy & Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Mobile App</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="question-box">
+                <h4>Fast Access</h4>
+                <input type="text" class="quest" placeholder="questions?" />
+                <i class="icons fa fa-question-circle-o"></i>
+                <input type="text" class="set" placeholder="settings" />
+                <i class="icons sett fa fa-cog"></i>
+              </div>
+
+              <div class="drop-down">
+                <label for="Language"><h4>Language</h4></label>
+                <select name="lang" id="lang">
+                  <option class="drop" value="eng">English</option>
+                  <option class="drop" value="french">French</option>
+                  <option class="drop" value="chinese">Chinese</option>
+                  <option class="drop" value="german">German</option>
+                  <option class="drop" value="arabic">Arabic</option>
+                  <option class="drop" value="greek">Greek</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="popup">
+
+      <!--MODAL HEADING-->
+      <div class="modal-top">
+        <div class="close-modal" onclick="toggle()" style="cursor: pointer;">
+          <img src="./Feed page/img/icons8-multiply-24.png" alt="close button" />
+          <h4>CLOSE</h4>
+        </div>
+        <div class="box"></div>
+        <div class="modal-title">
+          <h2>More from LinkedIn</h2>
+        </div>
+        <div class="box"></div>
+        <div class="help-unit">
+          <img src="./Feed page/img/icons8-help-24.png" alt="help button" />
+          <h4>HELP</h4>
+        </div>
+      </div>
+      <hr />
+
+      <!--MODAL CONTENT-->
+      <div class="modal-content">
+
+        <!--MODAL FIRST CONTENT-->
+        <div class="linkedin-learning">
+          <div class="linkedin-more">
+            <img src="./Feed page/img/icons8-literature-24.png" alt="linkedin learning" />
+
+            <div class="learning-info">
+              <h2>Learning with LinkedIn</h2>
+              <p>Courses, Lectures, Workshops</p>
+            </div>
+          </div>
+
+          <div class="more-info">
+            <div class="card card-1">
+              <img src="./Feed page/img/insights.png" alt="insight icon" />
+              <p>INSIGHTS</p>
+            </div>
+            <div class="card card-2">
+              <img src="./Feed page/img/bullseye.png" alt="advertise icon" />
+              <p>ADVERTISE</p>
+            </div>
+            <div class="break"></div>
+            <div class="card card-3">
+              <img src="./Feed page/img/Groups.png" alt="groups icon" />
+              <p>GROUPS</p>
+            </div>
+            <div class="card card-4">
+              <img src="./Feed page/img/profinder.png" alt="profinder icon" />
+              <p>PROFINDER</p>
+            </div>
+            <div class="break"></div>
+            <div class="card card-5">
+              <img src="./Feed page/img/salary.png" alt="salary icon" />
+              <p>SALARY</p>
+            </div>
+            <div class="card card-6">
+              <img src="./Feed page/img/slideshare.png" alt="slideshare icon" />
+              <p>SLIDESHARE</p>
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL SECOND CONTENT-->
+        <div class="business-services">
+          <h2>Business Services</h2>
+          <div class="business-card">
+            <h4>Talent Solutions</h4>
+            <p>Find, attract and recruit talent</p>
+          </div>
+          <div class="business-card">
+            <h4>Sales Solutions</h4>
+            <p>Unlock sales opportunities</p>
+          </div>
+          <div class="business-card">
+            <h4>Post a job</h4>
+            <p>Get your job in front of quality candidates</p>
+          </div>
+          <div class="business-card">
+            <h4>Marketing Solutions</h4>
+            <p>Acquire customers and grow your business</p>
+          </div>
+          <div class="business-card">
+            <h4>Learning Solutions</h4>
+            <p>Develop talent across your organisation</p>
+          </div>
+        </div>
+
+        <!--MODAL THIRD CONTENT-->
+        <div class="linkedin-premium">
+          <h4>LinkedIn Premium</h4>
+          <p>Special features only for premium users</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <script src="./header component/js/toggleHamburger.js"></script>
+    <script src="./Feed page/js/toggleOther.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
