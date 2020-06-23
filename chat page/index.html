@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="chat.css" />
+    <link rel="stylesheet" href="../header component/css/header.css" />
+    <link rel="stylesheet" href="../Profile_page_footer/footer.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="//db.onlinewebfonts.com/c/07a38bbad54db72a40b406bed1c72f53?family=Gotham+Pro"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+    <title>LinkedIn Redesign</title>
+  </head>
+  <body>
+    <div class="body-container" id="blur">
+      <header>
+        <div class="container">
+          <nav class="nav-bar">
+            <div class="nav-logo">
+              <img src="../header component/img/Logo.png" alt="" />
+            </div>
+            <div class="box"></div>
+            <ul class="nav-lists">
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/rss.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="">FEED</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/users.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="">NETWORK</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/briefcase.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="">JOBS</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon chat"
+                  src="../header component/img/chat.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="">CHAT</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/bell.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="">NOTICES</a>
+              </li>
+            </ul>
+            <div class="box"></div>
+            <form>
+              <div class="form-control">
+                <button class="search-btn">
+                  <img src="../header component/img/search.png" alt="" />
+                </button>
+                <input type="text" placeholder="Search" class="search-input" />
+              </div>
+            </form>
+            <div class="box"></div>
+            <div class="profile">
+              <img
+                class="img-profile"
+                src="../header component/img/profile-picture.png"
+                alt=""
+              />
+              <div>
+                <h4>D. KARGAEV <span>YOU</span></h4>
+                <p>
+                  367 views today
+                  <span
+                    >+32
+                    <img
+                      src="../header component/img/arrow-up-right.png"
+                      alt=""
+                  /></span>
+                </p>
+              </div>
+            </div>
+            <div class="box"></div>
+            <div class="other" onclick="toggle()" style="cursor: pointer;">
+              <img src="https://img.icons8.com/android/12/000000/more.png" />
+              <h4>OTHER</h4>
+            </div>
+            <div class="box" style="margin-right: 20px;"></div>
+            <div class="hamburger-icon">
+              <div class="hamburger-line-1"></div>
+              <div class="hamburger-line-2"></div>
+              <div class="hamburger-line-3"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- chat -->
+      <div class="wrapper">
+        <div class="left-top">
+          <ul>
+            <li>
+              <img src="./img/chat/link.png" alt="">
+              <span class="text">
+                CONNECTIONS
+              </span>
+              <span>
+                1,038
+              </span>
+            </li>
+            <li class="active-link">
+              <img src="./img/chat/disc.png" alt="">
+              <span class="text">
+                INVITATIONS
+              </span>
+              <span>
+                2
+              </span>
+            </li>
+            <li>
+              <img src="./img/chat/archive.png" alt="">
+              <span class="text">
+                TEAMMATES
+              </span>
+            </li>
+            <li>
+              <img src="./img/chat/users.png" alt="">
+              <span class="text">
+                GROUPS
+              </span>
+              <span>
+                6
+              </span>
+            </li>
+            <li>
+              <img src="./img/chat/layers.png" alt="">
+              <span class="text">
+                PAGES
+              </span>
+              <span>
+                28
+              </span>
+            </li>
+            <li>
+              <img src="./img/chat/hash.png" alt="">
+              <span class="text">
+                HASHTAGS
+              </span>
+              <span>
+                8
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="right-top">
+          <div class="buttons">
+            <button class="received">RECEIVED</button>
+            <button class="sent">SENT</button>
+          </div>
+          <div class="connection">
+            <div class="connection-notification">
+              <p class="connection-notifiication-text">YOU HAVE <span>2 NEW CONNECTIONS</span></p>
+            </div>
+            <div class="connection-profiles">
+              <div class="connection-profile">
+                <div class="flex">
+                  <img src="./img/chat/Photo (1).png" alt="">
+                  <div>
+                    <p class="connection-profile__name">
+                      Brandon Wilson
+                    </p>
+                    <p class="connection-profile__proffession">
+                      Senior UX designer
+                    </p>
+                    <p class="connection-profile__connect">
+                      623 connections
+                    </p>
+                  </div>
+                </div>
+                <p class="connection-message">
+                  Hey, I saw your works. I like it! Can we do something together? Or maybe you have project for UX at the moment?
+                </p>
+                <div class="connection-cta">
+                  <button class="accept">ACCEPT</button>
+                  <button class="decline">DECLINE</button>
+                </div>
+              </div>
+            </div>
+            <div class="connection-profiles">
+              <div class="connection-profile">
+                <div class="flex">
+                  <img src="./img/chat/Photo (2).png" alt="">
+                  <div>
+                    <p class="connection-profile__name">
+                     Theresa Steward
+                    </p>
+                    <p class="connection-profile__proffession">
+                      iOS developer
+                    </p>
+                    <p class="connection-profile__connect">
+                      623 connections
+                    </p>
+                  </div>
+                </div>
+                <div class="connection-cta">
+                  <button class="accept">ACCEPT</button>
+                  <button class="decline">DECLINE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="right-bottom">
+          <div class="recent-connections">
+            <p>
+              RECENT CONNECTIONS
+            </p>
+            <div class="connection-details">
+              
+              <div class="connection-detail">
+                <img src="./img/chat/Photo (3).png" alt="">
+                <div>
+                  <p class="connection-name">Audrey Alexander</p>
+                  <p>Team lead at Google</p>
+                </div>
+                <p>Yesterday, 12:30</p>
+              </div>
+
+              <div class="connection-detail">
+                <img src="./img/chat/Photo.png" alt="">
+                <div>
+                  <p class="connection-name">Kyle Fisher</p>
+                  <p>Product designer at Commandor Corp</p>
+                </div>
+                <p>Yesterday, 11:03</p>
+              </div>
+
+              <div class="connection-detail">
+                <img src="./img/chat/Photo (4).png" alt="">
+                <div>
+                  <p class="connection-name">Darlene Black</p>
+                  <p>HR-manager</p>
+                </div>
+                <p>20 may, tuesday</p>
+              </div>
+
+              <div class="connection-detail">
+                <img src="./img/chat/Photo (5).png" alt="">
+                <div>
+                  <p class="connection-name">Eduardo Russell</p>
+                  <p>Full stack developer at Yandex</p>
+                </div>
+                <p>26 aug, monday</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!--FOOTER-->
+    <footer id="footer">
+      <div class="footer_wrapper">
+          <div class="logo-wrapper">
+              <a href="linkedIn.com"><i class="logo1 fa fa-linkedin-square fa-3x"></i></a>
+              <p> Linked<span class="blue">In</span></p>
+          </div>
+          <div class="nav-bar">
+              <h3>Navigations</h3>
+              <div class="flex-box">
+                  <div class="first-links">
+                      <ul class="link">
+                          <li>
+                              <a href="#">About</a>
+                          </li>
+                          <li>
+                              <a href="#">Careers</a></li>
+                          <li>
+                              <a href="#">Advertising</a></li>
+                          <li>
+                              <a href="#">Small Business</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="second-links">
+                      <ul class="link">
+                          <li>
+                              <a href="#">Talent Solutions</a></li>
+                          <li>
+                              <a href="#">Marketing Solutions</a>
+                          </li>
+                          <li>
+                              <a href="#">Sales Solutions</a>
+                          </li>
+                          <li>
+                              <a href="#">Safety Center</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="third-links">
+                      <ul class="link">
+                          <li>
+                              <a href="#">Community Guidelines</a></li>
+                          <li>
+                              <a href="#">Privacy & Terms</a>
+                          </li>
+                          <li>
+                              <a href="#">Mobile App</a>
+                          </li>
+
+                      </ul>
+                  </div>
+
+                  <div class="question-box">
+                      <h4>Fast Access</h4>
+                      <input type="text" class="quest" placeholder="questions?">
+                      <i class="icons fa fa-question-circle-o"></i>
+                      <input type="text" class="set" placeholder="settings">
+                      <i class="icons sett fa fa-cog"></i>
+                  </div>
+
+                  <div class="drop-down">
+
+                      <label for="Language"><h4>Language</h4></label>
+                      <select name="lang" id="lang">
+                              <option class="drop" value="eng">English</option>
+                              <option class="drop" value="french">French</option>
+                              <option class="drop" value="chinese">Chinese</option>
+                              <option class="drop" value="german">German</option>
+                              <option class="drop" value="arabic">Arabic</option>
+                              <option class="drop" value="greek">Greek</option>
+                          </select>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    </div>
+
+    <div id="popup">
+
+      <!--MODAL HEADING-->
+      <div class="modal-top">
+        <div class="close-modal" onclick="toggle()" style="cursor: pointer;">
+          <img src="./img/icons8-multiply-24.png" alt="close button" />
+          <h4>CLOSE</h4>
+        </div>
+        <div class="box"></div>
+        <div class="modal-title">
+          <h2>More from LinkedIn</h2>
+        </div>
+        <div class="box"></div>
+        <div class="help-unit">
+          <img src="./img/icons8-help-24.png" alt="help button" />
+          <h4>HELP</h4>
+        </div>
+      </div>
+      <hr />
+
+      <!--MODAL CONTENT-->
+      <div class="modal-content">
+
+        <!--MODAL FIRST CONTENT-->
+        <div class="linkedin-learning">
+          <div class="linkedin-more">
+            <img src="./img/icons8-literature-24.png" alt="linkedin learning" />
+
+            <div class="learning-info">
+              <h2>Learning with LinkedIn</h2>
+              <p>Courses, Lectures, Workshops</p>
+            </div>
+          </div>
+
+          <div class="more-info">
+            <div class="card card-1">
+              <img src="./img/insights.png" alt="insight icon" />
+              <p>INSIGHTS</p>
+            </div>
+            <div class="card card-2">
+              <img src="./img/bullseye.png" alt="advertise icon" />
+              <p>ADVERTISE</p>
+            </div>
+            <div class="break"></div>
+            <div class="card card-3">
+              <img src="./img/Groups.png" alt="groups icon" />
+              <p>GROUPS</p>
+            </div>
+            <div class="card card-4">
+              <img src="./img/profinder.png" alt="profinder icon" />
+              <p>PROFINDER</p>
+            </div>
+            <div class="break"></div>
+            <div class="card card-5">
+              <img src="./img/salary.png" alt="salary icon" />
+              <p>SALARY</p>
+            </div>
+            <div class="card card-6">
+              <img src="./img/slideshare.png" alt="slideshare icon" />
+              <p>SLIDESHARE</p>
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL SECOND CONTENT-->
+        <div class="business-services">
+          <h2>Business Services</h2>
+          <div class="business-card">
+            <h4>Talent Solutions</h4>
+            <p>Find, attract and recruit talent</p>
+          </div>
+          <div class="business-card">
+            <h4>Sales Solutions</h4>
+            <p>Unlock sales opportunities</p>
+          </div>
+          <div class="business-card">
+            <h4>Post a job</h4>
+            <p>Get your job in front of quality candidates</p>
+          </div>
+          <div class="business-card">
+            <h4>Marketing Solutions</h4>
+            <p>Acquire customers and grow your business</p>
+          </div>
+          <div class="business-card">
+            <h4>Learning Solutions</h4>
+            <p>Develop talent across your organisation</p>
+          </div>
+        </div>
+
+        <!--MODAL THIRD CONTENT-->
+        <div class="linkedin-premium">
+          <h4>LinkedIn Premium</h4>
+          <p>Special features only for premium users</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <script src="../header component/js/toggleHamburger.js"></script>
+    <script src="./js/toggleOther.js"></script>
+  </body>
+</html>

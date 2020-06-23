@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7f9fb;
+  font-family: "Roboto", sans-serif;
+}
+
+/* utils ======*/
+
+.flex {
+  display: flex;
+}
+
+/* justify */
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* align */
+
+.items-center {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* width ====  */
+
+.main-container {
+  padding: 30px 100px;
+}
+
+hr {
+  border: 1px solid #dadada;
+  width: 40%;
+  display: block;
+  margin: 0rem 2rem;
+}
+
+main {
+  max-width: 70%;
+  min-width: 70%;
+  margin: 0rem 2rem 0rem 0rem;
+}
+
+aside {
+  max-width: 25%;
+  min-width: 25%;
+}
+
+h2 {
+  font-size: 13px;
+  line-height: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #181818;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 30px;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.job-card img {
+  width: 54px;
+  height: 54px;
+}
+
+.job-card button {
+  background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 14px;
+  border:  #0077b5 ; 
+}
+
+.job-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+}
+
+.job-card .job-detail {
+  width: 70%;
+  padding: 0px 40px 0px 20px;
+}
+
+.job-card .job-location span {
+  font-size: 13px;
+}
+
+.job-card .job-location {
+  margin: 10px 0rem;
+  color: #181818;
+}
+
+.job-card p {
+  color: #181818;
+  font-size: 15px;
+}
+
+/* search */
+.search-bar {
+  padding: 30px 30px;
+  background: white;
+  border-radius: 8px;
+}
+
+
+.search-input {
+  width: 100%;
+  display: flex;
+  margin: 20px 0px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input input {
+  flex-grow: 1;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search-input .search-filter {
+  margin: 0px 10px;
+}
+
+.search-input button {
+  background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+  border-radius: 4px;
+  padding: 10px;
+  border: none;
+}
+
+.jobs-heading {
+  margin: 30px 0px;
+}
+/* the aside styles */
+.post-job{
+  background-color: white;
+  padding-left: 70px;
+  padding-top: 20px;
+  padding-bottom: 17;
+  border-radius: 4px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.post-job button{
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 11px 11px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.side-first{
+  background-color: white;
+  background-color: white;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  /* display: flex; */
+
+}
+.top-header1{
+
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.top-header1 h2{
+  
+  padding-left: 30px;
+  font-size: 15px;
+}
+.top-header1 a{
+ text-decoration: none;
+ color:  #0275B1;
+ font-size: 15px;
+ padding-top: 9px;
+}
+ hr{
+  width: 80%;
+  height: 0px;
+  border:1px solid rgb(236, 236, 236);
+}
+.first-span{
+  display: flex;
+}
+.first-span h3{
+  
+  color: #181818;
+}
+
+.first-span span{
+  color: #02b033;
+ padding-top: 20px;
+ padding-left:5px;
+}
+.material-icons{
+  color: rgb(134, 133, 133);
+  float: right;
+}
+.side-first .pan{
+  font-size: 12px;
+  color: #181818;
+}
+.top-header2{
+  display: flex;
+  justify-content: center;
+  background-color:#FCFDFD;
+}
+.top-header2 h2{
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.side-second{
+  display: flex;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #FCFDFD;
+  margin-bottom:9px;
+  
+}
+.side-second img{
+  width: 32px;
+    height: 32px;
+    padding-right: 10px;
+    padding-top: 17px;
+    padding-left: 15;
+    padding-bottom: 16px;
+    border-radius: 27px;
+ }
+ .top-header3 {
+   display: flex;
+   justify-content: center;
+
+ }
+ .top-header3 h3{
+   font-size: 21px;
+ }
+ .side-third{
+    display: flex;
+    border-radius: 4px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+ }
+ .side-third img{
+  padding-right: 2px;
+ }
+ .side-third p{
+ font-size: 13px;
+ }
+ .side-third  span{
+  font-size: 12px;
+ }
+@media only screen and (max-width: 600px) {
+  .main-container {
+    padding: 30px 20px;
+    flex-wrap: wrap;
+  }
+
+  .job-card .job-detail {
+    width: 70%;
+    padding: 0px 0px 0px 10px;
+  }
+
+  .job-card {
+    flex-wrap: wrap;
+  }
+
+  main {
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0rem 2rem 0rem 0rem;
+  }
+
+  aside {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
