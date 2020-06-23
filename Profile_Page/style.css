@@ -128,7 +128,7 @@ cursor: pointer;
   text-transform: uppercase;
   border: none;
   padding: 0.5rem 1rem;
-  width: 40%;
+  width: 200px;
 }
 
 .profile-bio-buttons > a > #contact{
