@@ -1,0 +1,783 @@
+
+/* IMPORT LINKEDIN FONT */
+@font-face{
+    font-family: 'Gotham Pro';
+    src: url(./fonts/GothaProReg.otf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fb !important;
+    font-size: 16px;
+    font-family: 'Gotham Pro'!important;
+
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+h3{
+  font-weight: 900;
+}
+
+p{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: 0.75fr 0.25fr;
+}
+
+#content{
+  margin: 1rem;
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+}
+
+
+/* HEADER SECTION */
+
+
+#Profile-section-header{
+  background: url('./img/Rectangle.svg');
+  background-repeat: no-repeat;
+  display: grid;
+  background-size: cover;
+  padding: 1rem;
+  border-radius: 6px 6px 0 0;
+  padding-bottom: 7rem;
+  grid-template-columns: 1fr ;
+}
+
+ 
+
+.border-top{
+  display: inline-block;
+  grid-template-columns: 1fr;
+  background: rgba(255, 255, 255, 0.9);
+box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+border-radius: 4px;
+padding: 1em;
+cursor: pointer;
+}
+
+#edit{
+  display: inline;
+  padding: .75rem .5rem;
+  margin-right: 1rem;
+ 
+}
+
+#edit p{
+  margin: 0;
+}
+
+.right{
+  float: right;
+}
+
+.ellipis{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+#profile-section-bottom{
+  background-color: #fff;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  width: 100%;
+  border-radius: 0 0 6px 6px;
+  align-items: center;
+  line-height: 24px;
+}
+
+
+#profile-image img{
+  margin-top: -3rem;
+}
+
+#profile-bio{
+  margin-left: 2rem;
+  margin-top: -1.5rem;
+}
+
+.profile-bio-head > #name{
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.profile-bio-head >#location{
+  float: right;
+}
+
+.profile-bio-buttons input{
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5rem 1rem;
+  width: 200px;
+}
+
+.profile-bio-buttons > a > #contact{
+   color: #fff;
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.profile-bio-buttons > a > #connections{
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #0275B1;
+  color: #0275B1;
+}
+
+/* HEADER SECTION END */
+
+/* NOTIFICATION BAR  */
+#notif-bar-top {
+    display: flex;
+    border-bottom: 1px solid #dad7d7;
+    margin: 6rem 0rem 0 0rem ;
+    margin: 0;
+    border: 1px solid
+      linear-gradient(
+        180deg,
+        rgba(241, 244, 248, 0.8) 0%,
+        rgba(241, 244, 248, 0) 100%
+      );
+    margin: 1.5rem 0;
+    font-weight: 700;
+  }
+  
+  /* BLUE RECEIVED BLOCK */
+  .received {
+    background-color: #0e6795;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.25rem 0.25rem 0 0;
+    width: 17.5rem;
+    color: #fff;
+  }
+  
+  .received a {
+    color: #fff;
+  }
+  
+  .received:hover {
+    background-color: #095880;
+    cursor: pointer;
+  }
+  .white-block {
+    background-color: #fff;
+    width: 17.5rem;
+    text-align: center;
+    padding: 0.9rem;
+    margin-top: .75rem;
+    cursor: pointer;
+    border-radius: 0px 4px 0px 0px;
+    border: 1px solid #e7e7e7;
+  }
+/* NOTIFICATION BAR SECTION END */
+  
+
+/* ABOUT SECTION */
+#about{
+    background-color: #fff;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+    margin-top: 2rem;
+    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+    border-radius: 4px;
+}
+
+#about h3, a{
+    font-weight: 600;
+    margin: 0;
+}
+
+.link-text{
+    font-size: 12px;
+    color: #0275b1;
+}
+/* ABOUT SECTION END */
+
+
+
+/* PROJECTS SECTION */
+#projects{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+border-radius: 4px;
+}
+
+/* PROJECT BOXES */
+.showcase{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0 10px;
+    margin: 1rem 0;
+    
+}
+
+.showcase img{
+  width: 95%;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+  border-radius: 4px;
+}
+
+.small{
+    font-size: 10px;
+}
+
+.grey-text{
+  color: #747474;
+  margin-left: .8rem;
+}
+/* PROJECT SECTION END */
+
+
+/* Skills Section */
+#skills{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+border-radius: 4px;
+}
+
+#showcase-skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 25px;
+}
+
+
+/* Problem with aligning the blue number digit with design . Please Fix */
+.skill-box{
+  display: grid;
+  grid-template-columns: .8fr .2fr;
+  background: #FFFFFF;
+border: 1px solid #F4F4F4;
+box-sizing: border-box;
+border-radius: 6px;
+padding: 0rem;
+margin-bottom: 1.2rem;
+}
+
+.skill-box h5{
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+.skill-box p.link-text{
+  margin: 1rem 0 1rem 1rem;
+  text-align: left;
+}
+
+.img-collage{
+  display: flex;
+  margin: 0 0 1rem 1.5rem;
+  
+}
+
+.img-collage img{
+  margin-right: -0.55rem;
+}
+
+/* End of Project Section */
+
+/* EXPERIENCE SECTION */
+
+#experience{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+border-radius: 4px;
+}
+
+.jobs{
+  display: grid;
+  grid-template-columns: .1fr .9fr;
+  margin: 0 0rem;
+  align-items: center;
+  border-bottom: 1px solid #F4F4F4;
+  padding-bottom: 1.2rem;
+}
+
+ h4{
+  margin: .75rem 0;
+}
+
+.jobs img{
+  margin-top: -4rem;
+  margin-left: 1rem;
+}
+
+.jobs p{
+  font-size: .75rem;
+  line-height: 160%;
+  margin: .5rem 0;
+}
+
+#no-border{
+  border: none;
+  margin-top: 2.5rem;
+}
+
+#no-border h4{
+  margin-top: -.75rem;
+}
+
+/* END OF EXPERIENCE SECTION */
+
+
+/* Education Section Begins */
+
+#education{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+border-radius: 4px;
+}
+
+#education img{
+  margin-top: -4rem;
+}
+
+.year{
+  margin-left: 0px;
+  font-size: 12px;
+}
+
+#sidebar{
+  
+  margin: 1rem;
+}
+
+.dashboard{
+  background-color: #fff;
+  box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+border-radius: 4px;
+padding: 0 1.5rem 0.25rem 1.5rem;
+margin-bottom: 1rem;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.75rem 0;
+  font-size: 12px;
+  font-weight: 800;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blue-text{
+  font-size: 52px;
+line-height: 50px;
+text-transform: uppercase;
+color: #0275B1;
+font-weight: 900;
+}
+
+.container-fluid > #dashboard > .stats > p{
+  margin: 1.5rem 0;
+}
+
+#dashboard > div > p > .blue-text{
+   margin: 1.5rem 0;
+}
+
+.visitor-profile{
+  display: grid;
+  margin: 1rem 0;
+  grid-template-columns: .3fr 0.7fr;
+  align-items: center;
+}
+.small-font{
+  font-size: 12px;
+  margin: 0;
+}
+
+.course-title{
+  margin-left: 1.5rem;
+}
+
+.course-title strong{
+  font-size: 14px;
+}
+
+.course-image{
+  width: 110%;
+}
+
+
+@media only screen and (min-width: 1024px) and  (max-width : 1248px){
+  
+  .title > a.link-text{
+    display: none;
+  }
+
+  .course-title{
+    margin-left: 0;
+  }
+  
+  .visitor-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and  (max-width : 1023px){
+  
+  #container{
+    grid-template-columns: 1fr;
+  }
+
+  #sidebar{
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 300px) and  (max-width : 768px){
+  #container{
+    grid-template-columns: 1fr;
+  }
+
+  #sidebar{
+    display: none;
+  }
+
+  #content{
+    margin: 1rem;
+  }
+  .divisor{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+  }
+}
+
+
+/*-------OTHER POPUP MODAL--------*/
+
+.body-container {
+  position: relative;
+
+}
+
+.body-container#blur.active {
+  filter: blur(2px);
+  pointer-events: none;
+  overflow: hidden;
+  position: fixed;
+}
+
+#popup {
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  background: #FFFFFF;
+  width: 400px;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup .modal-top {
+  display: flex;
+  width: 450px;
+  height: 50px;
+}
+
+#popup .modal-top .close-modal {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 40px;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+
+#popup .modal-title h2 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.help-unit {
+  color: #0275B1;
+  font-size: 12px;
+  line-height: 11px;
+  margin-top: 10px;
+  margin-left: 30px;
+
+}
+
+#popup hr {
+  border: 1px solid #F4F4F4;
+  margin-top: 10px;
+}
+
+.modal-content {
+  padding: 20px 30px;
+}
+
+.linkedin-learning .linkedin-more {
+  display: flex;
+  background: #0275B1;
+  padding: 10px 30px;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.linkedin-learning .linkedin-more img {
+  width: 24px;
+  height: 24px;
+}
+
+.linkedin-more .learning-info {
+  margin-left: 20px;
+}
+
+.linkedin-more .learning-info h2 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.linkedin-more .learning-info p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.more-info {
+  border-bottom: 1px solid #bdbdbd42;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.card {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #bdbdbd42;
+  border-radius: 4px;
+}
+
+.card img {
+  height: 18px;
+  width: 18px;
+  margin-right: 12px;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+.card-1,
+.card-3,
+.card-5 {
+  margin-right: 5%;
+}
+
+.business-services {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bdbdbd42;
+}
+
+.business-services h2 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.business-card {
+  border: 1px solid #bdbdbd42;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+}
+
+.business-card h4 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.business-card p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.linkedin-premium {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #D8C281 0%, #AC9B69 100%);
+  border-radius: 4px;
+  color: white;
+}
+
+.linkedin-premium h4 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.linkedin-premium p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+
+
+/* MEdia Query For 320px and above */
+@media (max-width : 800px){
+  
+  .network-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .message{
+    display: none;
+  }
+
+  #connections{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .card-one{
+    align-items: center;
+  }
+  .wrap{
+    align-content: center;
+    margin: 0 .75rem;
+  }
+  .buttons{
+    display: flex;
+    
+  }
+  .btn-blue{
+    margin-right: 1rem;
+    width: 6rem;
+  }
+  .btn-1{
+    width: 6rem;
+  }
+  .bio{
+    width: 80%;
+    justify-content: start;
+  }
+  #notification-card{
+    margin: 1rem .75rem;
+  }
+  .summary{
+    display: none;
+  }
+  #notif-bar-top{
+    margin-top: 1rem;
+  }
+
+  #sidebar{
+    display: none;
+  }
+}
+@media only screen 
+and (min-device-width : 700px) 
+and (max-device-width : 1024px){
+  .network-container{
+    grid-template-columns: 1fr;
+  }
+  .btn-blue{
+    margin-bottom: .5rem;
+  }
+  .bio{
+    width: auto;
+  }
+  #sidebar{
+    margin-top: 5%;
+  }
+}
+
+@media(min-width: 1500px){
+  .menu{
+    display: none;
+  }
+}
+.menu div{
+  width: 2rem;
+  height: 4px;
+  background-color: #095880;
+  margin: 5px 0;
+  
+  border-radius: 5px;
+}
+
+.menu{
+  float: right;
+      position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+}
