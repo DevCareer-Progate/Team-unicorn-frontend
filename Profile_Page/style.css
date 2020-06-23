@@ -11,14 +11,18 @@
 
 html{
   scroll-behavior: smooth;
+  
 }
 
 body{
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5;
+    background-color: #e5e5e5 !important;
     font-size: 16px;
-    font-family: 'Gotham Pro';
+    font-family: 'Gotham Pro'!important;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 0.75fr 0.25fr;
 }
 
 a{
@@ -30,36 +34,117 @@ h3{
   font-weight: 900;
 }
 
-#container{
-    display: grid;
-    grid-template-columns: 80% 20%;
+p{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 
 #content{
-    margin: 6rem 3rem;
+    margin: 6rem 3rem ;
     font-family: 'Gotham Pro';
     font-weight: 400;
 }
 
 
 /* HEADER SECTION */
-#header{
-  background-color: rgb(117, 110, 110);
-  width: 100%;
+
+
+#Profile-section-header{
+  background: url('./img/Rectangle.svg');
+  background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  background-size: cover;
+  padding: 1rem;
+  border-radius: 6px 6px 0 0;
+  padding-bottom: 7rem;
+  grid-template-columns: 1fr ;
 }
 
  
 
 .border-top{
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 4px;
+  display: inline-block;
+  grid-template-columns: 1fr;
+  background: rgba(255, 255, 255, 0.9);
+box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+border-radius: 4px;
+padding: 1em;
+cursor: pointer;
 }
+
+#edit{
+  display: inline;
+  padding: .75rem .5rem;
+  margin-right: 1rem;
+ 
+}
+
+#edit p{
+  margin: 0;
+}
+
+.right{
+  float: right;
+}
+
+.ellipis{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+#profile-section-bottom{
+  background-color: #fff;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  width: 100%;
+  border-radius: 0 0 6px 6px;
+  align-items: center;
+  line-height: 24px;
+}
+
+
+#profile-image img{
+  margin-top: -3rem;
+}
+
+#profile-bio{
+  margin-left: 2rem;
+  margin-top: -1.5rem;
+}
+
+.profile-bio-head > #name{
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.profile-bio-head >#location{
+  float: right;
+}
+
+.profile-bio-buttons input{
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5rem 1rem;
+  width: 40%;
+}
+
+.profile-bio-buttons > a > #contact{
+   color: #fff;
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.profile-bio-buttons > a > #connections{
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #0275B1;
+  color: #0275B1;
+}
+
 /* HEADER SECTION END */
 
 /* NOTIFICATION BAR  */
@@ -290,4 +375,112 @@ border-radius: 4px;
 .year{
   margin-left: 0px;
   font-size: 12px;
+}
+
+#sidebar{
+  
+  margin: 6rem 3rem 6rem 1rem;
+}
+
+.dashboard{
+  background-color: #fff;
+  box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+border-radius: 4px;
+padding: 0 1.5rem 0.25rem 1.5rem;
+margin-bottom: 1rem;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.75rem 0;
+  font-size: 12px;
+  font-weight: 800;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blue-text{
+  font-size: 52px;
+line-height: 50px;
+text-transform: uppercase;
+color: #0275B1;
+font-weight: 900;
+}
+
+.container-fluid > #dashboard > .stats > p{
+  margin: 1.5rem 0;
+}
+
+#dashboard > div > p > .blue-text{
+   margin: 1.5rem 0;
+}
+
+.visitor-profile{
+  display: grid;
+  margin: 1rem 0;
+  grid-template-columns: .3fr 0.7fr;
+  align-items: center;
+}
+.small-font{
+  font-size: 12px;
+  margin: 0;
+}
+
+.course-title{
+  margin-left: 1.5rem;
+}
+
+.course-title strong{
+  font-size: 14px;
+}
+
+.course-image{
+  width: 110%;
+}
+
+
+@media only screen and (min-width: 1024px) and  (max-width : 1248px){
+  
+  .title > a.link-text{
+    display: none;
+  }
+
+  .course-title{
+    margin-left: 0;
+  }
+  
+  .visitor-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and  (max-width : 1023px){
+  
+  body{
+    grid-template-columns: 1fr;
+  }
+
+  #sidebar{
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 300px) and  (max-width : 768px){
+  body{
+    grid-template-columns: 1fr;
+  }
+
+  #sidebar{
+    display: none;
+  }
+
+  #content{
+    margin: 6rem 1rem
+  }
 }
