@@ -1,1 +1,0 @@
-// Add notif bar change on click functionality
