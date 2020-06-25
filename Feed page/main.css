@@ -3,13 +3,6 @@
   src: url(../fonts/GothaProReg.otf);
 }
 
-@font-face {
-  font-family: "Gotham Pro";
-  src: url(../fonts/GothaProLig.otf);
-  font-weight: lighter;
-}
-
-
 * {
   font-family:"Gotham Pro";
 }
