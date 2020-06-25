@@ -1,6 +1,6 @@
 @font-face {
-    src: url("//db.onlinewebfonts.com/c/07a38bbad54db72a40b406bed1c72f53?family=Gotham+Pro");
   font-family: "Gotham Pro";
+  src: url(../fonts/GothaProReg.otf );
 }
 * {
   font-family:"Gotham Pro";
