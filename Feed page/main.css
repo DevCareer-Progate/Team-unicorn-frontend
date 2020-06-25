@@ -9,11 +9,6 @@
   font-weight: lighter;
 }
 
-@font-face {
-  font-family: "Gotham Pro";
-  src: url(../fonts/GothaProBol.otf);
-  font-weight: bold;
-}
 
 * {
   font-family:"Gotham Pro";
