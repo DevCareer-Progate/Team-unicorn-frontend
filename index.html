@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a LinkedIn redesigned website" />
+
+    <!-- FONT-AWESOME KIT  -->
+    <script
+      src="https://kit.fontawesome.com/9b1c8d52ed.js"
+      crossorigin="anonymous"
+    ></script>
+   
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    
+    <!-- CSS STYLING -->
+    <link rel="stylesheet" href="./header component/css/header.css" />
+    <link rel="stylesheet" href="./Profile_page_footer/footer.css" />
+   
+    <link rel="stylesheet" href="./Profile_Page/style.css">
+
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <div class="body-container " id="blur">
+        <header>
+          <div class="container">
+            <nav class="nav-bar">
+              <div class="nav-logo">
+                <a href="../index.html">
+                  <img src="./header component/img/Logo.png" alt="logo" />
+                </a>
+              </div>
+              <div class="box"></div>
+              <ul class="nav-lists">
+                <li class="nav-list">
+                  <img
+                    class="nav-list-icon"
+                    src="./header component/img/rss.png"
+                    alt="nav_icon"
+                  /><br />
+                  <a class="nav-link" href="./Feed page/index.html">FEED</a>
+                </li>
+                <li class="nav-list">
+                  <img
+                    class="nav-list-icon"
+                    src="./header component/img/users.png"
+                    alt="nav_icon"
+                  /><br />
+                  <a class="nav-link" href="./Network_Page/index.html">NETWORK</a>
+                </li>
+                <li class="nav-list">
+                  <img
+                    class="nav-list-icon"
+                    src="./header component/img/briefcase.png"
+                    alt="nav_icon"
+                  /><br />
+                  <a class="nav-link" href="./jobs/index.html">JOBS</a>
+                </li>
+                <li class="nav-list">
+                  <img
+                    class="nav-list-icon chat"
+                    src="./header component/img/chat.png"
+                    alt="nav_icon"
+                  /><br />
+                  <a class="nav-link" href="./Chat/index.html">CHAT</a>
+                </li>
+                <li class="nav-list">
+                  <img
+                    class="nav-list-icon"
+                    src="./header component/img/bell.png"
+                    alt="nav_icon"
+                  /><br />
+                  <a class="nav-link" href="./Notices Page/index.html">NOTICES</a>
+                </li>
+              </ul>
+              <div class="box"></div>
+              <form>
+                <div class="form-control">
+                  <button class="search-btn">
+                    <img src="./header component/img/search.png" alt="nav_icon" />
+                  </button>
+                  <input type="text" placeholder="Search" aria-label="search-input" class="search-input" />
+                </div>
+              </form>
+              <div class="box"></div>
+              <div class="profile">
+                <img
+                  class="img-profile"
+                  style="height: 42px;
+                  margin-top: auto;
+                  margin-bottom: auto;"
+                  src="./header component/img/profile-picture.png"
+                  alt="profile-image"
+                />
+                <div>
+                  <h4>D. KARGAEV <span>YOU</span></h4>
+                  <p>
+                    367 views today
+                    <span
+                      >+32
+                      <img
+                        src="./header component/img/arrow-up-right.png"
+                        alt="right_arrow"
+                    /></span>
+                  </p>
+                </div>
+              </div>
+              <div class="box"></div>
+              <div class="other" onclick="toggle()" style="cursor: pointer;">
+                <img src="https://img.icons8.com/android/12/000000/more.png" />
+                <h4>OTHER</h4>
+              </div>
+              <div class="box" style="margin-right: 20px;"></div>
+              <div class="hamburger-icon">
+                <div class="hamburger-line-1"></div>
+                <div class="hamburger-line-2"></div>
+                <div class="hamburger-line-3"></div>
+              </div>
+            </nav>
+          </div>
+        </header>
+      
+
+      <!-- MAIN CONTENT CONTAINER -->
+        <div class="divisor">
+          <div id="container">
+
+            <!-- MAIN CONTENT SECTION -->
+            <div id="content">
+      
+              <!-- HEADER SECTION  -->
+              <div class="container-fluid">
+                <div id="header-profile">
+                  <div id="Profile-section-header">
+                    <div class="contain">
+                      <div class="border-top">
+                        <i class="fas fa-upload"></i>
+                      </div>
+                      <div class="border-top right ellipis"><i class="fas fa-ellipsis-v"></i></div>
+                      <div class="border-top right" id="edit">
+                        <span>
+                          <p> <i class="far fa-edit"></i> EDIT PROFILE</p>
+                      </span>
+                      </div>
+                       
+                    </div>
+                      </div>
+                  <div id="profile-section-bottom">
+                    <div id="profile-image">
+                      <img src="../Profile_Page/img/Ellipse.svg" alt="profile-image">
+                    </div>
+                    <div id="profile-bio">
+                        <div class="profile-bio-head">
+                          <span id="name"><strong>Dmitry Kargaev  </strong><img src="../Profile_Page/img/Logo.svg" alt="logo"></span>
+                          <span id="location"><img src="../Profile_Page/img/Vector.svg" alt="vector">Saint Petersburg, Russian Federation</span>
+                        </div>
+                        <div class="profile-bio-content">
+                          <p>
+                            Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS & android) and creative projects. Open to offers.
+                          </p>
+                        </div>
+                        <div class="profile-bio-buttons">
+                          <a href="#">
+                            <input id="contact" type="button" value="Contact Info">
+                          </a>
+                          <a href="#">
+                            <input id="connections" type="button" value="1,043 Connections">
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+      
+              <!-- NOTIFICATION BAR -->
+              <div class="container-fluid">
+                <div id="notif-bar-top">
+                  <div class= "received">
+                    <a href="#">RECEIVED</a>
+                  </div>
+                  <div class="white-block">
+                    <a href="#">ACTIVITY & INTERESTS</a>
+                  </div>
+                  <div class="white-block">
+                    <a href="#">ARTICLES (3)</a>
+                  </div>
+                </div>
+              </div>
+              
+              
+      
+              <!-- ABOUT SECTION  -->
+              <div class="container-fluid">
+                <div id="about">
+                  <h3>About</h3>
+                  <p
+                    >I'm more experienced in eCommerce web projects and mobile banking
+                    apps, but also like to work with creative projects, such as landing
+                    pages or unusual corporate websites.
+                  </p>
+                  <a href="#" class="link-text">SEE MORE</a>
+                </div>
+              </div>
+              
+      
+      
+              <!-- PROJECTS SECTION -->
+              <div class="container-fluid">
+                <div id="projects">
+                  <h3>Projects   <span class="grey-text ">  3 of 12</span></h3>
+                  <div class="showcase">
+                      <div class="box-1">
+                          <img src="../Profile_Page/img/ext.png" alt="zara">
+                          <h5>Zara redesign concept</h5>
+                          <p class="small">UX/UI design, 15.07.2019 </p>
+                      </div>
+                      <div class="box-1">
+                          <img src="../Profile_Page/img/ext-1.png" alt="zara">
+                          <h5>SCTHON event brand identityt</h5>
+                          <p class="small">UI/UX design, 22.02.2020 </p>
+                      </div>
+                      <div class="box-1">
+                          <img src="../Profile_Page/img/ext-2.png" alt="zara">
+                          <h5>Drozd. Brand identity. 2016</h5>
+                          <p class="small">Graphic design, 03.04.2016</p>
+                      </div>
+                  </div>
+                  <a href="#" class="link-text">SHOW ALL (12)</a>
+              </div>
+              </div>
+      
+      
+              <!-- SKILLS SECTION -->
+             <div class="container-fluid">
+              <div id="skills">
+                <h3>Skills & Endorsements</h3>
+      
+                <!-- SKILL BOXES -->
+                <div id="showcase-skills">
+      
+                  <!-- BOX 1 -->
+                  <div class="skill-box">
+                    <h5>User experience (UX)</h5>
+                    <p class="link-text"><strong>6</strong></p>
+                    <div class="img-collage">
+                      <img src="../Profile_Page/img/collage/Photo-1.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-2.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-3.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-4.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-5.png" alt="profile-image">
+                    </div>
+                  </div>
+      
+                  <!-- BOX 2 -->
+                  <div class="skill-box">
+                    <h5>User interface (UI)</h5>
+                    <p class="link-text"><strong>7</strong></p>
+                    <div class="img-collage">
+                      <img src="../Profile_Page/img/collage/Photo-3.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-7.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-2.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-9.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-8.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-11.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/count.png" alt="profile-image">
+                    </div>
+                  </div>
+      
+                  <!-- BOX 3 -->
+                  <div class="skill-box">
+                    <h5>Brand identity</h5>
+                    <p class="link-text"><strong>8</strong></p>
+                    <div class="img-collage">
+                      <img src="../Profile_Page/img/collage/Photo-9.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-8.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-4.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-7.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-6.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/Photo-12.png" alt="profile-image">
+                      <img src="../Profile_Page/img/collage/count (1).png" alt="profile-image">
+                    </div>
+                  </div>
+                </div>
+                
+                <a href="#" class="link-text">SHOW ALL (17)</a>
+              </div>
+             </div>
+      
+              <!-- EXPERIENCE SECTION -->
+              <div class="container-fluid">
+                <div id="experience">
+                  <h3>Experience</h3>
+                  <!-- JOBS BOXES -->
+                  <div class="jobs">
+                    <img src="../Profile_Page/img/Group (1).png" alt="globe-logo">
+                    <div class="description">
+                      <h4>Freelance UI/UX Designer</h4>
+                      <p>Self-Employed <span class="grey-text">Around the world</span></p>
+                      <p>Jun 2016 - Present <span class="link-text"> 3yrs 3mos</span></p>
+                      <p>Work with clients and web studios as freelancer. Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="jobs  no-border">
+                    <img src="../Profile_Page/img/Group (2).png" alt="globe-logo">
+                    <div class="description">
+                      <h4>UI/UX Designer</h4>
+                      <p>Upwork <span class="grey-text"> International</span></p>
+                      <p>Jun 2019 - Present <span class="link-text">  3mos</span></p>
+                      <p>New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- EDUCTION SECTION -->
+              <div class="container-fluid">
+                <div id="education">
+                  <h3>Education</h3>
+                  <div class="jobs no-border">
+                    <img src="../Profile_Page/img/Group (3).png" alt="globe-logo">
+                    <div class="description">
+                      <h4>Moscow State Linguistic University</h4>
+                      <p>Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance</p>
+                      <span class="grey-text year small">2013 — 2017</span>
+                      <p>Additional English classes and UX profile courses​.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+      
+          <!-- SIDEBAR BEGINS -->
+          <div id="sidebar">
+            <!-- DASHBOARD SECTION -->
+            <div class="container-fluid">
+      
+              <div id="dashboard" class="dashboard">
+                <div class="title">
+                  <p>YOUR DASHBOARD</p>
+                  <a class="link-text" href="#">GO TO STATS</a>
+                </div>
+              <div class="stats">
+                <p>
+                  <span class="blue-text">367</span><br>
+                  views today
+                </p>
+                <p>
+                  <span class="blue-text">15</span><br>
+                  posts views
+                </p>
+                <p>
+                  <span class="blue-text">9</span><br>
+                  search appearances
+                </p>
+              </div>
+            </div>
+            </div>
+      
+            <!-- Visitors Section -->
+            <div class="container-fluid">
+              <div id="visitors" class="dashboard">
+                <div class="title">
+                  <p>VISITORS</p>
+                  <a class="link-text" href="#">VIEW ALL</a>
+                </div>
+                <div class="visitor-profile">
+                  
+                <div class="images">
+                  <img src="../Profile_Page/img/profile.svg" alt="profile-image">
+                </div>
+                <div class="visitor-bio">
+                  <strong>
+                    Theresa Steward
+                  </strong><br>
+                  <p class="small-font">
+                    Android Developer
+                  </p>
+                </div>
+                </div>
+                <div class="visitor-profile">
+                  
+                  <div class="images">
+                    <img src="../Profile_Page/img/profile-1.svg" alt="profile-image">
+                  </div>
+                  <div class="visitor-bio">
+                    <strong>
+                      Darlene Black
+                    </strong><br>
+                    <p class="small-font">
+                      HR-manager
+                    </p>
+                  </div>
+                  </div>
+                  <div class="visitor-profile">
+                  
+                    <div class="images">
+                      <img src="../Profile_Page/img/Photo-1.svg" alt="profile-image">
+                    </div>
+                    <div class="visitor-bio">
+                      <strong>
+                        Alex Marquel
+                      </strong><br>
+                      <p class="small-font">
+                        Product designer at Com...
+                      </p>
+                    </div>
+                    </div>
+                    <div class="visitor-profile">
+                  
+                      <div class="images">
+                        <img src="../Profile_Page/img/Photo.svg" alt="profile-image">
+                      </div>
+                      <div class="visitor-bio">
+                        <strong>
+                          Brandon Wilson
+                        </strong><br>
+                        <p class="small-font">
+                          Senior UX designer
+                        </p>
+                      </div>
+                      </div>
+                      <div class="visitor-profile">
+                        <div class="images">
+                          <img src="../Profile_Page/img/Photo-2.svg" alt="profile-image">
+                        </div>
+                        <div class="visitor-bio">
+                          <strong>
+                            Audrey Alexander
+                          </strong><br>
+                          <p class="small-font">
+                            iOS developer
+                          </p>
+                        </div>
+                        </div>
+                      </div>
+               </div>
+      
+               <!-- Courses Section -->
+                   <div class="container-fluid">
+                    <div id="courses" class="dashboard">
+                      <div class="title">
+                        <p>YOU MAY LIKE THESE COURSES</p>
+                      </div>
+                      <div class="visitor-profile">
+                        <div class="images">
+                          <img class="course-image" src="../Profile_Page/img/Group.png" alt="profile-image">
+                        </div>
+                        <div class="visitor-bio course-title" >
+                          <strong>UX Foundations: Prototyping</strong><br>
+                          <p class="small-font">
+                            27,959 viewers
+                          </p>
+                        </div>
+                      </div>
+                      <div class="visitor-profile">
+                        <div class="images">
+                          <img class="course-image" src="../Profile_Page/img/Group-2.png" alt="profile-image">
+                        </div>
+                        <div class="visitor-bio course-title" >
+                          <strong>Designing with Adobe XD and pro</strong><br>
+                          <p class="small-font">
+                            9,122 viewers
+                          </p>
+                        </div>
+                      </div>
+                      <div class="visitor-profile">
+                        <div class="images">
+                          <img class="course-image" src="../Profile_Page/img/Group-1.png" alt="profile-image">
+                        </div>
+                        <div class="visitor-bio course-title" >
+                          <strong>UX Foundations: Styles and GUIs</strong><br>
+                          <p class="small-font">
+                            13,858 viewers
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+          </div>
+            </div>
+        </div>
+      
+    
+    
+       <!--FOOTER-->
+       <footer id="footer">
+        <div class="footer_wrapper">
+          <div class="logo-wrapper">
+            <a href="linkedIn.com"
+              ><i class="logo1 fa fa-linkedin-square fa-3x" style="color: #0275b1;"></i
+            ></a>
+            <p>Linked<span class="blue">In</span></p>
+          </div>
+          <div class="nav-bar">
+            <h3>Navigations</h3>
+            <div class="flex-box">
+              <div class="first-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                  <li>
+                    <a href="#">Advertising</a>
+                  </li>
+                  <li>
+                    <a href="#">Small Business</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="second-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">Talent Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Marketing Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Sales Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Safety Center</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="third-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">Community Guidelines</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy & Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Mobile App</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="question-box">
+                <h4>Fast Access</h4>
+                <input type="text" class="quest" placeholder="questions?" />
+                <i class="icons fa fa-question-circle-o"></i>
+                <input type="text" class="set" placeholder="settings" />
+                <i class="icons sett fa fa-cog"></i>
+              </div>
+
+              <div class="drop-down">
+                <label for="Language"><h4>Language</h4></label>
+                <select name="lang" id="lang">
+                  <option class="drop" value="eng">English</option>
+                  <option class="drop" value="french">French</option>
+                  <option class="drop" value="chinese">Chinese</option>
+                  <option class="drop" value="german">German</option>
+                  <option class="drop" value="arabic">Arabic</option>
+                  <option class="drop" value="greek">Greek</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+    <div id="popup">
+
+      <!--MODAL HEADING-->
+      <div class="modal-top">
+        <div class="close-modal" onclick="toggle()" style="cursor: pointer;">
+          <img src="./Feed page/img/icons8-multiply-24.png" alt="close button" />
+          <h4>CLOSE</h4>
+        </div>
+        <div class="box"></div>
+        <div class="modal-title">
+          <h2>More from LinkedIn</h2>
+        </div>
+        <div class="box"></div>
+        <div class="help-unit">
+          <img src="./Feed page/img/icons8-help-24.png" alt="help button" />
+          <h4>HELP</h4>
+        </div>
+      </div>
+      <hr />
+
+      <!--MODAL CONTENT-->
+      <div class="modal-content">
+
+        <!--MODAL FIRST CONTENT-->
+        <div class="linkedin-learning">
+          <div class="linkedin-more">
+            <img src="./Feed page/img/icons8-literature-24.png" alt="linkedin learning" />
+
+            <div class="learning-info">
+              <h2>Learning with LinkedIn</h2>
+              <p>Courses, Lectures, Workshops</p>
+            </div>
+          </div>
+
+          <div class="more-info">
+            <div class="card card-1">
+              <img src="./Feed page/img/insights.png" alt="insight icon" />
+              <p>INSIGHTS</p>
+            </div>
+            <div class="card card-2">
+              <img src="./Feed page/img/bullseye.png" alt="advertise icon" />
+              <p>ADVERTISE</p>
+            </div>
+            <div class="break"></div>
+            <div class="card card-3">
+              <img src="./Feed page/img/Groups.png" alt="groups icon" />
+              <p>GROUPS</p>
+            </div>
+            <div class="card card-4">
+              <img src="./Feed page/img/profinder.png" alt="profinder icon" />
+              <p>PROFINDER</p>
+            </div>
+            <div class="break"></div>
+            <div class="card card-5">
+              <img src="./Feed page/img/salary.png" alt="salary icon" />
+              <p>SALARY</p>
+            </div>
+            <div class="card card-6">
+              <img src="./Feed page/img/slideshare.png" alt="slideshare icon" />
+              <p>SLIDESHARE</p>
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL SECOND CONTENT-->
+        <div class="business-services">
+          <h2>Business Services</h2>
+          <div class="business-card">
+            <h4>Talent Solutions</h4>
+            <p>Find, attract and recruit talent</p>
+          </div>
+          <div class="business-card">
+            <h4>Sales Solutions</h4>
+            <p>Unlock sales opportunities</p>
+          </div>
+          <div class="business-card">
+            <h4>Post a job</h4>
+            <p>Get your job in front of quality candidates</p>
+          </div>
+          <div class="business-card">
+            <h4>Marketing Solutions</h4>
+            <p>Acquire customers and grow your business</p>
+          </div>
+          <div class="business-card">
+            <h4>Learning Solutions</h4>
+            <p>Develop talent across your organisation</p>
+          </div>
+        </div>
+
+        <!--MODAL THIRD CONTENT-->
+        <div class="linkedin-premium">
+          <h4>LinkedIn Premium</h4>
+          <p>Special features only for premium users</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <script src="./header component/js/toggleHamburger.js"></script>
+    <script src="./Feed page/js/toggleOther.js"></script>
+  </body>
+</html>

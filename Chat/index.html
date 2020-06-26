@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chat</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../header component/css/header.css" />
+    <link rel="stylesheet" href="../Profile_page_footer/footer.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="resp.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <link
+    href="//db.onlinewebfonts.com/c/07a38bbad54db72a40b406bed1c72f53?family=Gotham+Pro"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <div class="body-container" id="blur">
+         <!--HEADER-->
+      <header>
+        <div class="container">
+          <nav class="nav-bar">
+            <div class="nav-logo">
+              <a href="../index.html">
+                <img src="../header component/img/Logo.png" alt="" />
+              </a>
+            </div>
+            <div class="box"></div>
+            <ul class="nav-lists">
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/rss.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="../Feed page/index.html">FEED</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/users.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="../Network_Page/index.html">NETWORK</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/briefcase.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="../jobs/index.html">JOBS</a>
+              </li>
+              <li class="nav-list" style="border-bottom: 1px solid #0275B1;">
+                <img
+                  class="nav-list-icon chat"
+                  src="../header component/img/chat.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" style="color: #0275B1;" href="/">CHAT</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/bell.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="../Notices Page/index.html">NOTICES</a>
+              </li>
+            </ul>
+            <div class="box"></div>
+            <form>
+              <div class="form-control">
+                <button class="search-btn">
+                  <img src="../header component/img/search.png" alt="" />
+                </button>
+                <input type="text" placeholder="Search" class="search-input" />
+              </div>
+            </form>
+            <div class="box"></div>
+            <div class="profile">
+              <img
+                class="img-profile"
+                src="../header component/img/profile-picture.png"
+                alt=""
+              />
+              <div>
+                <h4>D. KARGAEV <span>YOU</span></h4>
+                <p>
+                  367 views today
+                  <span
+                    >+32
+                    <img
+                      src="../header component/img/arrow-up-right.png"
+                      alt=""
+                  /></span>
+                </p>
+              </div>
+            </div>
+            <div class="box"></div>
+            <div class="other" onclick="toggle()" style="cursor: pointer;">
+              <img src="https://img.icons8.com/android/12/000000/more.png" />
+              <h4>OTHER</h4>
+            </div>
+            <div class="box" style="margin-right: 20px;"></div>
+            <div class="hamburger-icon">
+              <div class="hamburger-line-1"></div>
+              <div class="hamburger-line-2"></div>
+              <div class="hamburger-line-3"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="message-list-container-button">
+        <div class="message-list-container">
+          <div class="chat-list">
+            <h6>CHATS</h6>
+          </div>
+          <div class="message-list">
+            <img src="images/Photo.jpg" />
+            <div class="name-message">
+              <h6>Dareen Black</h6>
+              <p>
+                <img id="icon" src="images/Ellipse.png" />Hey, how is your
+                project?
+              </p>
+            </div>
+          </div>
+          <div class="message-list">
+            <img src="images/Photo%20(8).jpg" />
+            <div class="name-message">
+              <h6 class="blue head">Thresea Steward</h6>
+              <p class="blue">Hi, Dmitry! I have a work for you. We</p>
+            </div>
+          </div>
+          <div class="message-list">
+            <img src="images/Photo%20(2).jpg" />
+            <div class="name-message">
+              <h6>Brandon White</h6>
+              <p>I am Russian and I am learning Engl</p>
+            </div>
+          </div>
+          <div class="message-list">
+            <img src="images/Photo%20(3).jpg" />
+            <div class="name-message">
+              <h6 class="faint">Kyle Fisher</h6>
+              <p class="faint">So, It’s up to you!</p>
+            </div>
+          </div>
+          <div class="message-list">
+            <img src="images/Photo%20(4).jpg" />
+            <div class="name-message">
+              <h6 class="faint">Audrey Alexander</h6>
+              <p><img id="icon" src="images/Ellipse.png" />When you got it?</p>
+            </div>
+          </div>
+          <div class="message-list">
+            <img />
+            <div class="name-message">
+              <h6>Design Conference</h6>
+              <p>
+                <img id="icon" src="images/Ellipse.png" />Can you guys help me
+                with it?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button>START NEW CHAT</button>
+        </div>
+      </div>
+      <div class="message-container">
+        <div class="message-top">
+          <div class="message-top-left">
+            <h6>CHAT WITH <span>KYLE FISHER</span></h6>
+            <p id="middle">Last ONLINE 4 HOURS AGO</p>
+          </div>
+          <p><img class="icon" src="images/Vector.jpg" /> SHARED MEDIA (12)</p>
+        </div>
+        <div class="message-chat">
+          <div class="chat-send faint">
+            <div class="me">
+              Oh, sh#t! This junior designers!!!!!!!!!!!!!!!!
+              <img src="images/Photo%20(9).jpg" />
+            </div>
+          </div>
+          <div class="chat-received">
+            <div class="you sender">
+              Hi, Kyle. How are you doing? Did you get that job yesterday?
+            </div>
+          </div>
+          <div class="chat-send">
+            <div class="me">
+              Nope, they kicked me out of the office!
+              <img src="images/Photo%20(9).jpg" />
+            </div>
+          </div>
+          <div class="chat-received">
+            <div class="you sender">
+              Wow! I can invite you in my new project. We need a product
+              designer right now!
+            </div>
+          </div>
+          <div class="chat-send second">
+            <div class="me">
+              It’ll be great! I need this job, but...
+              <img src="images/Photo%20(9).jpg" />
+            </div>
+          </div>
+          <div class="chat-send third">
+            <div class="me third">So, it’s up to you!</div>
+          </div>
+        </div>
+        <div class="message-bottom">
+          <div class="input-holder">
+            <textarea class="input-message">
+                    Write your message</textarea
+            >
+            <a class="input-img"><img src="images/Vector (2).png" /> </a>
+            <button class="input-btn">
+              <img src="./images/Vector (1).png" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <!--FOOTER-->
+       <footer id="footer">
+        <div class="footer_wrapper">
+          <div class="logo-wrapper">
+            <a href="linkedIn.com">
+              <i
+                class="logo1 fa fa-linkedin-square fa-3x"
+                style="color: #0275b1;"
+              ></i>
+            </a>
+            <p>Linked<span class="blue">In</span></p>
+          </div>
+          <div class="nav-bar">
+            <h3>Navigations</h3>
+            <div class="flex-box">
+              <div class="first-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                  <li>
+                    <a href="#">Advertising</a>
+                  </li>
+                  <li>
+                    <a href="#">Small Business</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="second-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">Talent Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Marketing Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Sales Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Safety Center</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="third-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">Community Guidelines</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy & Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Mobile App</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="question-box">
+                <h4>Fast Access</h4>
+                <input type="text" class="quest" placeholder="questions?" />
+                <i class="icons fa fa-question-circle-o"></i>
+                <input type="text" class="set" placeholder="settings" />
+                <i class="icons sett fa fa-cog"></i>
+              </div>
+
+              <div class="drop-down">
+                <label for="Language"><h4>Language</h4></label>
+                <select name="lang" id="lang">
+                  <option class="drop" value="eng">English</option>
+                  <option class="drop" value="french">French</option>
+                  <option class="drop" value="chinese">Chinese</option>
+                  <option class="drop" value="german">German</option>
+                  <option class="drop" value="arabic">Arabic</option>
+                  <option class="drop" value="greek">Greek</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="popup">
+      <!--MODAL HEADING-->
+      <div class="modal-top">
+        <div class="close-modal" onclick="toggle()" style="cursor: pointer;">
+          <img src="../Feed page/img/icons8-multiply-24.png" alt="close button" />
+          <h4>CLOSE</h4>
+        </div>
+        <div class="box"></div>
+        <div class="modal-title">
+          <h2>More from LinkedIn</h2>
+        </div>
+        <div class="box"></div>
+        <div class="help-unit">
+          <img src="../Feed page/img/icons8-help-24.png" alt="help button" />
+          <h4>HELP</h4>
+        </div>
+      </div>
+      <hr />
+
+      <!--MODAL CONTENT-->
+      <div class="modal-content">
+        <!--MODAL FIRST CONTENT-->
+        <div class="linkedin-learning">
+          <div class="linkedin-more">
+            <img src="../Feed page/img/icons8-literature-24.png" alt="linkedin learning" />
+
+            <div class="learning-info">
+              <h2>Learning with LinkedIn</h2>
+              <p>Courses, Lectures, Workshops</p>
+            </div>
+          </div>
+
+          <div class="more-info">
+            <div class="card card-1">
+              <img src="../Feed page/img/insights.png" alt="insight icon" />
+              <p>INSIGHTS</p>
+            </div>
+            <div class="card card-2">
+              <img src="../Feed page/img/bullseye.png" alt="advertise icon" />
+              <p>ADVERTISE</p>
+            </div>
+            <div class="break"></div>
+            <div class="card card-3">
+              <img src="../Feed page/img/Groups.png" alt="groups icon" />
+              <p>GROUPS</p>
+            </div>
+            <div class="card card-4">
+              <img src="../Feed page/img/profinder.png" alt="profinder icon" />
+              <p>PROFINDER</p>
+            </div>
+            <div class="break"></div>
+            <div class="card card-5">
+              <img src="../Feed page/img/salary.png" alt="salary icon" />
+              <p>SALARY</p>
+            </div>
+            <div class="card card-6">
+              <img src="../Feed page/img/slideshare.png" alt="slideshare icon" />
+              <p>SLIDESHARE</p>
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL SECOND CONTENT-->
+        <div class="business-services">
+          <h2>Business Services</h2>
+          <div class="business-card">
+            <h4>Talent Solutions</h4>
+            <p>Find, attract and recruit talent</p>
+          </div>
+          <div class="business-card">
+            <h4>Sales Solutions</h4>
+            <p>Unlock sales opportunities</p>
+          </div>
+          <div class="business-card">
+            <h4>Post a job</h4>
+            <p>Get your job in front of quality candidates</p>
+          </div>
+          <div class="business-card">
+            <h4>Marketing Solutions</h4>
+            <p>Acquire customers and grow your business</p>
+          </div>
+          <div class="business-card">
+            <h4>Learning Solutions</h4>
+            <p>Develop talent across your organisation</p>
+          </div>
+        </div>
+
+        <!--MODAL THIRD CONTENT-->
+        <div class="linkedin-premium">
+          <h4>LinkedIn Premium</h4>
+          <p>Special features only for premium users</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../Feed page/js/toggleOther.js"></script>
+  </body>
+</html>

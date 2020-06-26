@@ -1,0 +1,158 @@
+    * {
+        box-sizing: border-box;
+    }
+    /* IMPORT FONT-FACE */
+    
+    a,
+    li {
+        text-decoration: none;
+    }
+
+    
+    footer {
+        margin-top: 10px;
+        border-top: 1px solid #E7E7E7;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    /*LOGO WRAPPER */
+    .logo-wrapper {
+        float: left;
+        margin-top: 30px;
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+
+    /* BLUE LINKEDIN SPAN */
+    
+    .blue {
+        color: #0275B1;
+    }
+    /* NAVIGATIONS*/
+    
+    footer li {
+        list-style: none;
+        padding-bottom: 5px;
+    }
+    
+    footer .link a {
+        color: #333;
+    }
+    
+    footer .flex-box {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* FOOTER SEGMENTS */
+    footer .first-links,
+    .second-links,
+    .third-links {
+        margin-right: 50px;
+    }
+    
+    footer .nav-bar {
+        margin-top: 10px;
+        bottom: 6rem;
+    }
+    
+    footer .nav-bar h3 {
+        padding-top: 10px;
+    }
+    /* QUESTION SECTION */
+    
+    footer .question-box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 3rem;
+    }
+
+    footer .question-box h4 {
+        margin-bottom: 30px;
+    }
+    /* FONT AWESOME ICONS */
+    
+    footer .icons {
+        position: relative;
+        left: 9rem;
+        bottom: 16%;
+        color: #fff;
+    }
+    
+    footer .sett {
+        color: #0275B1;
+    }
+    
+    footer .set {
+        width: 170px;
+        height: 32px;
+        padding: 3px 10px;
+        border: 1px solid #0275B1;
+        border-radius: 4px;
+    }
+    
+    footer .quest {
+        width: 170px;
+        height: 32px;
+        padding: 3px 10px;
+        border: 1px solid #0275B1;
+        border-radius: 4px;
+        background-color: #0275B1;
+    }
+    /*QUESTION  PLACEHOLDER*/
+    
+    footer input.quest::placeholder {
+        font-size: 10px;
+    }
+    
+    footer .quest::placeholder {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 12px;
+    }
+    /*SETTINGS  PLACEHOLDER*/
+    
+    footer input.set::placeholder {
+        font-size: 9px;
+    }
+    
+    footer .set::placeholder {
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    /* LANGUAGE DROP-DOWN */
+    
+    footer .drop-down {
+        display: block;
+        position: relative;
+        margin-left: 40px;
+        bottom: 3rem;
+    }
+    
+    footer #lang {
+        margin-top: 30px;
+        text-transform: uppercase;
+        margin-right: 20px;
+        width: 270px;
+        height: 32px;
+        border-radius: 4px;
+        font-size: 9px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        footer {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        footer {
+            display: none;
+        }
+    }

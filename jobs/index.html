@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/job.css" />
+    <link rel="stylesheet" href="../header component/css/header.css" />
+    <link rel="stylesheet" href="../Profile_page_footer/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/07a38bbad54db72a40b406bed1c72f53?family=Gotham+Pro"
+      rel="stylesheet"
+    />
+    <title>jobs</title>
+  </head>
+
+  <body>
+    <div class="body-container" id="blur">
+      <header>
+        <div class="container">
+          <nav class="nav-bar">
+            <div class="nav-logo">
+              <a href="../index.html">
+                <img src="../header component/img/Logo.png" alt="" />
+              </a>
+            </div>
+            <div class="box"></div>
+            <ul class="nav-lists">
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/rss.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="../Feed page/index.html">FEED</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/users.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="../Network_Page/index.html">NETWORK</a>
+              </li>
+              <li class="nav-list" style="border-bottom: 1px solid #0275B1;">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/briefcase.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" style="color: #0275B1;" href="/">JOBS</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon chat"
+                  src="../header component/img/chat.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="../Chat/index.html">CHAT</a>
+              </li>
+              <li class="nav-list">
+                <img
+                  class="nav-list-icon"
+                  src="../header component/img/bell.png"
+                  alt=""
+                /><br />
+                <a class="nav-link" href="../Notices Page/index.html">NOTICES</a>
+              </li>
+            </ul>
+            <div class="box"></div>
+            <form>
+              <div class="form-control">
+                <button class="search-btn">
+                  <img src="../header component/img/search.png" alt="" />
+                </button>
+                <input type="text" placeholder="Search" class="search-input" />
+              </div>
+            </form>
+            <div class="box"></div>
+            <div class="profile">
+              <img
+                class="img-profile"
+                src="../header component/img/profile-picture.png"
+                alt=""
+              />
+              <div>
+                <h4>D. KARGAEV <span>YOU</span></h4>
+                <p>
+                  367 views today
+                  <span
+                    >+32
+                    <img
+                      src="../header component/img/arrow-up-right.png"
+                      alt=""
+                  /></span>
+                </p>
+              </div>
+            </div>
+            <div class="box"></div>
+            <div class="other" onclick="toggle()" style="cursor: pointer;">
+              <img src="https://img.icons8.com/android/12/000000/more.png" />
+              <h4>OTHER</h4>
+            </div>
+            <div class="box" style="margin-right: 20px;"></div>
+            <div class="hamburger-icon">
+              <div class="hamburger-line-1"></div>
+              <div class="hamburger-line-2"></div>
+              <div class="hamburger-line-3"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!--PAGE CONTENT-->
+      <div class="row page-container">
+        <div class="column job-content">
+          <div class="row form">
+            <h2>YOUR DREAM JOB IS HERE</h2>
+            <div class="form-line"></div>
+            <textarea
+              name=" column new-job-item"
+              placeholder="Search jobs"
+            ></textarea>
+            <div class="column new-job-icons">
+              <img src="./img/jobs/sliders.png" alt="tune icon" />
+              <img src="./img/jobs/search.png" alt="search icon" />
+            </div>
+          </div>
+
+          <div class="jobs-for-you">
+            <hr class="left" />
+            Jobs for you
+            <hr class="right" />
+          </div>
+
+          <!--EACH JOB POSTING-->
+          <div class="jobs">
+            <img src="./img/logos/upwork.jpg" alt="upwork icon" />
+            <div class="job-description">
+              <h1>UX/UI designer</h1>
+              <div class="job-tag">
+                <p>Upwork</p>
+                <p>Remote only</p>
+              </div>
+              <p class="job-info">
+                On Upwork you'll find a range of top freelancers and agencies,
+                from developers and development agencies to designers and
+                creative agencies, copywriters,
+              </p>
+            </div>
+            <div class="job-info-more">
+              <button type="button" name="info-more">MORE</button>
+            </div>
+          </div>
+
+          <div class="jobs facebook">
+            <img src="./img/jobs/facebook.jpg" alt="facebook icon" />
+            <div class="job-description">
+              <h1>Product designer</h1>
+              <div class="job-tag">
+                <p>Facebook</p>
+                <p>CA, USA</p>
+              </div>
+              <p class="job-info">
+                Founded in 2004, Facebook's mission is to give people the power
+                to build community and bring the world closer together. People
+                use our products to stay..
+              </p>
+            </div>
+            <div class="job-info-more">
+              <button type="button" name="info-more">MORE</button>
+            </div>
+          </div>
+
+          <div class="jobs google">
+            <img src="./img/jobs/google.jpg" alt="google icon" />
+            <div class="job-description">
+              <h1>Part-time UX designer</h1>
+              <div class="job-tag">
+                <p>Google</p>
+                <p>International</p>
+              </div>
+              <p class="job-info">
+                Search the world's information, including webpages, images,
+                videos and more. Google has many special features to help you
+                find exactly what you're looking.
+              </p>
+            </div>
+            <div class="job-info-more">
+              <button type="button" name="info-more">MORE</button>
+            </div>
+          </div>
+
+          <div class="jobs linkedin">
+            <img src="./img/jobs/linkedin.jpg" alt="linkedin icon" />
+            <div class="job-description">
+              <h1>Web designer</h1>
+              <div class="job-tag">
+                <p>LinkedIn</p>
+                <p>CA, USA</p>
+              </div>
+              <p class="job-info">
+                LinkedIn, the world's largest professional network. The mission
+                of LinkedIn is simple: connect the world's professional.
+              </p>
+            </div>
+            <div class="job-info-more">
+              <button type="button" name="info-more">MORE</button>
+            </div>
+          </div>
+
+          <div class="jobs-for-you">
+            <hr class="left" />
+            New Jobs
+            <hr class="right" />
+          </div>
+
+          <div class="jobs instagram">
+            <img src="./img/jobs/instagram.jpg" alt="instagram icon" />
+            <div class="job-description">
+              <h1>UI designer</h1>
+              <div class="job-tag">
+                <p>Instagram</p>
+                <p>CA, USA</p>
+              </div>
+              <p class="job-info">
+                Instagram is a photo and video-sharing social networking service
+                owned by Facebook, Inc.
+              </p>
+            </div>
+            <div class="job-info-more">
+              <button type="button" name="info-more">MORE</button>
+            </div>
+          </div>
+
+          <div class="jobs periscope">
+            <img src="./img/jobs/peris.jpg" alt="periscope icon" />
+            <div class="job-description">
+              <h1>Product designer</h1>
+              <div class="job-tag">
+                <p>Periscope</p>
+                <p>Remote only</p>
+              </div>
+              <p class="job-info">
+                Periscope is a live video streaming app for Android and iOS
+                developed by Kayvon Beykpour and Joe Bernstein and acquired by
+                Twitter before launch in 2015.
+              </p>
+            </div>
+            <div class="job-info-more">
+              <button type="button" name="info-more">MORE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sidebar">
+          <div class="post-a-job">
+            <button type="button" name="new-job">POST A JOB</button>
+          </div>
+
+          <div class="search-list">
+            <div class="search-heading">
+              <h2 class="search-heading-name">My Searches</h2>
+              <h2 class="edit-search"><a href="#">Edit List</a></h2>
+            </div>
+            <hr />
+            <div class="search-container">
+              <div class="job-search">
+                <h2>UX/UI designer <span>+240</span></h2>
+                <p>Remote</p>
+              </div>
+              <img src="./img/jobs/bell-off.png" alt="notification off" />
+            </div>
+
+            <div class="search-container">
+              <div class="job-search web">
+                <h2>Web designer</h2>
+                <p>Los-Angeles, CA</p>
+              </div>
+              <img src="./img/jobs/bell.png" alt="notification on" />
+            </div>
+
+            <div class="search-container">
+              <div class="job-search graphic">
+                <h2>Graphic designer</h2>
+                <p>Malaysia, Kuala Lumpur</p>
+              </div>
+              <img src="./img/jobs/bell.png" alt="notification on" />
+            </div>
+          </div>
+
+          <div class="track-jobs">
+            <div class="track-heading">
+              <h2 class="track-heading-name">Tracked Jobs</h2>
+            </div>
+            <hr />
+            <div class="track-container">
+              <img src="./img/logos/upwork.jpg" alt="upwork icon" />
+              <div class="track-info">
+                <h2>UX/UI Designer</h2>
+                <p>Upwork</p>
+              </div>
+            </div>
+            <div class="track-container">
+              <img src="./img/jobs/facebook.jpg" alt="facebook icon" />
+              <div class="track-info">
+                <h2>Product Designer</h2>
+                <p>Facebook</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending-articles">
+            <div class="trending-articles-heading">
+              <h2>Articles for you</h2>
+            </div>
+            <hr />
+            <div class="article">
+              <img class="article-video" src="./img/jobs/bg1.jpg" />
+              <div class="article-info">
+                <h1>The guide. Apply for a job</h1>
+                <p>12,932 viewers</p>
+              </div>
+            </div>
+            <div class="article">
+              <img class="article-video" src="./img/jobs/bg2.jpg" />
+              <div class="article-info">
+                <h1>Your dream job and how you can g</h1>
+                <p>9,112 viewers</p>
+              </div>
+            </div>
+            <div class="article">
+              <img class="article-video" src="./img/jobs/bg3.jpg" />
+              <div class="article-info">
+                <h1>Now you know it. 15 steps to find job</h1>
+                <p>7,221 viewers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--FOOTER-->
+      <footer id="footer">
+        <div class="footer_wrapper">
+          <div class="logo-wrapper">
+            <a href="linkedIn.com"
+              ><i class="logo1 fa fa-linkedin-square fa-3x"></i
+            ></a>
+            <p>Linked<span class="blue">In</span></p>
+          </div>
+          <div class="nav-bar">
+            <h3>Navigations</h3>
+            <div class="flex-box">
+              <div class="first-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                  <li>
+                    <a href="#">Advertising</a>
+                  </li>
+                  <li>
+                    <a href="#">Small Business</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="second-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">Talent Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Marketing Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Sales Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#">Safety Center</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="third-links">
+                <ul class="link">
+                  <li>
+                    <a href="#">Community Guidelines</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy & Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Mobile App</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="question-box">
+                <h4>Fast Access</h4>
+                <input type="text" class="quest" placeholder="questions?" />
+                <i class="icons fa fa-question-circle-o"></i>
+                <input type="text" class="set" placeholder="settings" />
+                <i class="icons sett fa fa-cog"></i>
+              </div>
+
+              <div class="drop-down">
+                <label for="Language"><h4>Language</h4></label>
+                <select name="lang" id="lang">
+                  <option class="drop" value="eng">English</option>
+                  <option class="drop" value="french">French</option>
+                  <option class="drop" value="chinese">Chinese</option>
+                  <option class="drop" value="german">German</option>
+                  <option class="drop" value="arabic">Arabic</option>
+                  <option class="drop" value="greek">Greek</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="popup">
+
+        <!--MODAL HEADING-->
+        <div class="modal-top">
+          <div class="close-modal" onclick="toggle()" style="cursor: pointer;">
+            <img src="../Feed page/img/icons8-multiply-24.png" alt="close button" />
+            <h4>CLOSE</h4>
+          </div>
+          <div class="box"></div>
+          <div class="modal-title">
+            <h2>More from LinkedIn</h2>
+          </div>
+          <div class="box"></div>
+          <div class="help-unit">
+            <img src="../Feed page/img/icons8-help-24.png" alt="help button" />
+            <h4>HELP</h4>
+          </div>
+        </div>
+        <hr />
+  
+        <!--MODAL CONTENT-->
+        <div class="modal-content">
+  
+          <!--MODAL FIRST CONTENT-->
+          <div class="linkedin-learning">
+            <div class="linkedin-more">
+              <img src="../Feed page/img/icons8-literature-24.png" alt="linkedin learning" />
+  
+              <div class="learning-info">
+                <h2>Learning with LinkedIn</h2>
+                <p>Courses, Lectures, Workshops</p>
+              </div>
+            </div>
+  
+            <div class="more-info">
+              <div class="card card-1">
+                <img src="../Feed page/img/insights.png" alt="insight icon" />
+                <p>INSIGHTS</p>
+              </div>
+              <div class="card card-2">
+                <img src="../Feed page/img/bullseye.png" alt="advertise icon" />
+                <p>ADVERTISE</p>
+              </div>
+              <div class="break"></div>
+              <div class="card card-3">
+                <img src="../Feed page/img/Groups.png" alt="groups icon" />
+                <p>GROUPS</p>
+              </div>
+              <div class="card card-4">
+                <img src="../Feed page/img/profinder.png" alt="profinder icon" />
+                <p>PROFINDER</p>
+              </div>
+              <div class="break"></div>
+              <div class="card card-5">
+                <img src="../Feed page/img/salary.png" alt="salary icon" />
+                <p>SALARY</p>
+              </div>
+              <div class="card card-6">
+                <img src="../Feed page/img/slideshare.png" alt="slideshare icon" />
+                <p>SLIDESHARE</p>
+              </div>
+            </div>
+          </div>
+  
+          <!--MODAL SECOND CONTENT-->
+          <div class="business-services">
+            <h2>Business Services</h2>
+            <div class="business-card">
+              <h4>Talent Solutions</h4>
+              <p>Find, attract and recruit talent</p>
+            </div>
+            <div class="business-card">
+              <h4>Sales Solutions</h4>
+              <p>Unlock sales opportunities</p>
+            </div>
+            <div class="business-card">
+              <h4>Post a job</h4>
+              <p>Get your job in front of quality candidates</p>
+            </div>
+            <div class="business-card">
+              <h4>Marketing Solutions</h4>
+              <p>Acquire customers and grow your business</p>
+            </div>
+            <div class="business-card">
+              <h4>Learning Solutions</h4>
+              <p>Develop talent across your organisation</p>
+            </div>
+          </div>
+  
+          <!--MODAL THIRD CONTENT-->
+          <div class="linkedin-premium">
+            <h4>LinkedIn Premium</h4>
+            <p>Special features only for premium users</p>
+          </div>
+        </div>
+      </div>
+  
+     
+      <script src="../header component/js/toggleHamburger.js"></script>
+      <script src="../Feed page/js/toggleOther.js"></script>
+  </body>
+</html>

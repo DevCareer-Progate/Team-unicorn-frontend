@@ -1,0 +1,428 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url(../../fonts/GothaProReg.otf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f9fb;
+  font-family: "Gotham Pro";
+}
+
+a {
+  color: #0275b1;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 12px;
+  line-height: 11px;
+}
+
+/*BODY CONTENT*/
+.notice-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.column {
+  float: left;
+}
+
+.notice-content {
+  width: 60%;
+}
+
+.sidebar {
+  width: 22%;
+  margin-right: 5%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*PAGE CONTENT LAYOUT*/
+.notice-recent,
+.notice-earlier {
+  font-size: 11px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 4%;
+}
+
+.notice-recent hr {
+  border: 1px solid #bdbdbd42;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+.notice-earlier hr {
+  border: 1px solid #bdbdbd42;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* NOTICE FORMS CONTENT LAYOUT */
+.notice-form {
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #ffff;
+  padding: 2%;
+}
+
+.notice-3 {
+    width: 90%;
+}
+
+.more-content {
+  float: right;
+  margin-top: 1.5%;
+}
+
+.notice-earlier {
+  margin-top: 5%;
+}
+
+/* SIDEBAR CONTENT */
+
+/* NOTIFICATION */
+.notif-bar {
+  margin-bottom: 6%;
+  background-color: #ffff;
+  border-radius: 4px;
+}
+
+.notif {
+  display: flex;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.notif img {
+  height: 50px;
+}
+
+.notif h4 {
+  padding: 20px 0 0 20px;
+  opacity: 0.6;
+}
+
+.notif-settings {
+  padding: 20px;
+}
+
+/* DASHBOARD DISPLAY */
+.dashboard-bar {
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.dashboard-heading {
+  height: 40px;
+  display: flex;
+}
+
+.dashboard-heading h2 {
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+
+.dashboard-heading-name {
+  float: left;
+  width: 45%;
+  margin: 6%;
+}
+
+.dashboard-stats {
+  float: right;
+  margin: 6%;
+  text-decoration: underline;
+}
+
+.dashboard-bar hr {
+  border: 1px solid #f4f4f4;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-view {
+  margin-left: 20px;
+}
+
+.dashboard-view p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.display-view,
+.display-post {
+  margin-bottom: 20px;
+}
+
+/*-------OTHER POPUP MODAL--------*/
+
+.body-container {
+  position: relative;
+}
+
+.body-container#blur.active {
+  filter: blur(2px);
+  pointer-events: none;
+  overflow: hidden;
+  position: fixed;
+}
+
+#popup {
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  background: #ffffff;
+  width: 400px;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup .modal-top {
+  display: flex;
+  width: 450px;
+  height: 50px;
+}
+
+#popup .modal-top .close-modal {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 40px;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+#popup .modal-title h2 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.help-unit {
+  color: #0275b1;
+  font-size: 12px;
+  line-height: 11px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+#popup hr {
+  border: 1px solid #f4f4f4;
+  margin-top: 10px;
+}
+
+.modal-content {
+  padding: 20px 30px;
+}
+
+.linkedin-learning .linkedin-more {
+  display: flex;
+  background: #0275b1;
+  padding: 10px 30px;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.linkedin-learning .linkedin-more img {
+  width: 24px;
+  height: 24px;
+}
+
+.linkedin-more .learning-info {
+  margin-left: 20px;
+}
+
+.linkedin-more .learning-info h2 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.linkedin-more .learning-info p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.more-info {
+  border-bottom: 1px solid #bdbdbd42;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.card {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #bdbdbd42;
+  border-radius: 4px;
+}
+
+.card img {
+  height: 18px;
+  width: 18px;
+  margin-right: 12px;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+.card-1,
+.card-3,
+.card-5 {
+  margin-right: 5%;
+}
+
+.business-services {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bdbdbd42;
+}
+
+.business-services h2 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.business-card {
+  border: 1px solid #bdbdbd42;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+}
+
+.business-card h4 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.business-card p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.linkedin-premium {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #d8c281 0%, #ac9b69 100%);
+  border-radius: 4px;
+  color: white;
+}
+
+.linkedin-premium h4 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.linkedin-premium p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+  
+    .notice-container {
+      display: block;
+    }
+  
+    .notice-content {
+      width: 100%;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+  
+    .notice-container {
+      display: block;
+    }
+  
+    .notice-content {
+      width: 100%;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+
+  }
+  
+  @media only screen and (max-width: 1281px) {
+  
+    .sidebar {
+      width: 25%;
+    }
+  }
